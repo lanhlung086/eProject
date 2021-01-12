@@ -1,7 +1,8 @@
 export const store = [
     {
         id: "MA01",
-        image: "./imgs/minkaAireFan01.jpg",
+        imageBig: "./imgs/minkaAireFan01.jpg",
+        imageSmall: "./imgs/minkaAireFanS01.jpg",
         title: "Minka-Aire F736L-BS/SDBK Gear 54\" Inch Ceiling Fan with Integrated 18W LED Light and DC Motor in Brushed Steel/Sand Black Finish",
         rating: 4,
         reviews: 5,
@@ -10,7 +11,8 @@ export const store = [
     },
     {
         id: "MA02",
-        image: "./imgs/minkaAireFan02.jpg",
+        imageBig: "./imgs/minkaAireFan02.jpg",
+        imageSmall: "./imgs/minkaAireFanS02.jpg",
         title: "Minka Aire F868L-BN Sleek 60\" Ceiling Fan with LED Light and Remote Control, Brushed Nickel",
         rating: 4.5,
         reviews: 6,
@@ -19,7 +21,8 @@ export const store = [
     },
     {
         id: "CM01",
-        image: "./imgs/craftmadeFan01.jpg",
+        imageBig: "./imgs/craftmadeFan01.jpg",
+        imageSmall: "./imgs/craftmadeFanS01.jpg",
         title: "Craftmade Kids Ceiling Fan Boys WB348TS Tiger Shark Warplane With Light, 48-Inch 3 Blade Hugger Ceiling Fan",
         rating: 5,
         reviews: 10,
@@ -28,7 +31,8 @@ export const store = [
     },
     {
         id: "CM02",
-        image: "./imgs/craftmadeFan02.jpg",
+        imageBig: "./imgs/craftmadeFan02.jpg",
+        imageSmall: "./imgs/craftmadeFanS02.jpg",
         title: "Craftmade Rustic Ceiling Fan with Light and Remote WIN56ABZWP5 Winton, Aged Bronze, Weathered Pine Blades",
         rating: 4.5,
         reviews: 3,
@@ -37,7 +41,8 @@ export const store = [
     },
     {
         id: "KL01",
-        image: "./imgs/kichlerFan01.jpg",
+        imageBig: "./imgs/kichlerFan01.jpg",
+        imageSmall: "./imgs/kichlerFanS01.jpg",
         title: "Kichler 300230NI, Ceiling Fan Brushed Nickel 15\" Ceiling Fan with Light & Remote Control",
         rating: 4.5,
         reviews: 5,
@@ -46,7 +51,8 @@ export const store = [
     },
     {
         id: "KL02",
-        image: "./imgs/kichlerFan02.jpg",
+        imageBig: "./imgs/kichlerFan02.jpg",
+        imageSmall: "./imgs/kichlerFanS02.jpg",
         title: "Kichler 300265DBK Gentry 65\" Ceiling Fan with LED Lights and Wall Control, Distressed Black",
         rating: 5,
         reviews: 12,
@@ -54,8 +60,19 @@ export const store = [
         bestSeller: true,
     },
     {
+        id: "KL03",
+        imageBig: "./imgs/kichlerFan03.jpg",
+        imageSmall: "./imgs/kichlerFanS03.jpg",
+        title: "Kichler 300209SBK, Ceiling Fan Satin Black 52\" Ceiling Fan with Light & Remote Control",
+        rating: 4,
+        reviews: 7,
+        price: 599.95,
+        bestSeller: false,
+    },
+    {
         id: "MC01",
-        image: "./imgs/monteCarlo01.jpg",
+        imageBig: "./imgs/monteCarloFan01.jpg",
+        imageSmall: "./imgs/monteCarloFanS01.jpg",
         title: "Monte Carlo 3MAVR60BSKOAD Maverick Modern Energy Star 60\" Ceiling Fan with LED Light and Hand Remote Control, 3 Balsa Wood Blades, Brushed Steel",
         rating: 5,
         reviews: 8,
@@ -64,7 +81,8 @@ export const store = [
     },
     {
         id: "MC02",
-        image: "./imgs/monteCarlo02.jpg",
+        imageBig: "./imgs/monteCarloFan02.jpg",
+        imageSmall: "./imgs/monteCarloFanS02.jpg",
         title: "Monte Carlo Fans 14PRR72AGPD Prairie Grand Windmill Energy Star 72\" Outdoor Ceiling Fan with LED Light and Hand Remote Control, 14 Wood Blades, Aged Pewter-Light Grey Weathered Oak Blades",
         rating: 4.5,
         reviews: 2,
@@ -73,7 +91,8 @@ export const store = [
     },
     {
         id: "C01",
-        image: "./imgs/casablancaFan01.jpg",
+        imageBig: "./imgs/casablancaFan01.jpg",
+        imageSmall: "./imgs/casablancaFanS01.jpg",
         title: "Casablanca Indoor Ceiling Fan, with wall control - Panama 54 inch, Brushed Nickel, 55067",
         rating: 4,
         reviews: 4,
@@ -82,7 +101,8 @@ export const store = [
     },
     {
         id: "C02",
-        image: "./imgs/casablancaFan02.jpg",
+        imageBig: "./imgs/casablancaFan02.jpg",
+        imageSmall: "./imgs/casablancaFanS02.jpg",
         title: "Casablanca Indoor Ceiling Fan with LED Light and remote control - Wisp 44 inch, Nobel Bronze, 59287",
         rating: 4,
         reviews: 3,
@@ -91,7 +111,8 @@ export const store = [
     },
     {
         id: "QR01",
-        image: "./imgs/quorumFan01.jpg",
+        imageBig: "./imgs/quorumFan01.jpg",
+        imageSmall: "./imgs/quorumFanS01.jpg",
         title: "Quorum 196015-69 60\" Windmill Ceiling Fan in Noir with Weathered Oak Finished Blades, Damp Rated",
         rating: 5,
         reviews: 11,
@@ -100,7 +121,8 @@ export const store = [
     },
     {
         id: "QR02",
-        image: "./imgs/quorumFan02.jpg",
+        imageBig: "./imgs/quorumFan02.jpg",
+        imageSmall: "./imgs/quorumFanS02.jpg",
         title: "Quorum 3525-86 Protruding Mount, 5 Weathered Oak Blades Ceiling fan with 14 watts light, Oiled Bronze",
         rating: 4,
         reviews: 3,
@@ -109,7 +131,8 @@ export const store = [
     },
     {
         id: "LK01",
-        image: "./imgs/laskoFan01.jpg",
+        imageBig: "./imgs/laskoFan01.jpg",
+        imageSmall: "./imgs/laskoFanS01.jpg",
         title: "Lasko Portable Electric 42\" Oscillating Tower Fan with Fresh Air Ionizer, Timer and Remote Control for Indoor, Bedroom and Home Office Use, Silver 2551",
         rating: 4.5,
         reviews: 6,
@@ -118,7 +141,8 @@ export const store = [
     },
     {
         id: "LK02",
-        image: "./imgs/laskoFan02.jpg",
+        imageBig: "./imgs/laskoFan02.jpg",
+        imageSmall: "./imgs/laskoFanS02.jpg",
         title: "Lasko 2535 52″ Space-Saving Pedestal Tower Fan with Remote Control - Features Built-in Timer and Wide Spread Oscillation",
         rating: 5,
         reviews: 8,
@@ -127,7 +151,8 @@ export const store = [
     },
     {
         id: "HW01",
-        image: "./imgs/honeywellFan01.jpg",
+        imageBig: "./imgs/honeywellFan01.jpg",
+        imageSmall: "./imgs/honeywellFanS01.jpg",
         title: "Honeywell Fresh Breeze Tower Fan with Remote Control HYF048 Black With Programmable Thermostat, Timer Shut-Off Function & Dust Filter",
         rating: 4.5,
         reviews: 5,
@@ -136,7 +161,8 @@ export const store = [
     },
     {
         id: "HW02",
-        image: "./imgs/honeywellFan02.jpg",
+        imageBig: "./imgs/honeywellFan02.jpg",
+        imageSmall: "./imgs/honeywellFanS02.jpg",
         title: "Honeywell Quiet Set Whole Room Tower Fan",
         rating: 4.5,
         reviews: 2,
@@ -145,7 +171,8 @@ export const store = [
     },
     {
         id: "V01",
-        image: "./imgs/vornadoFan01.jpg",
+        imageBig: "./imgs/vornadoFan01.jpg",
+        imageSmall: "./imgs/vornadoFanS01.jpg",
         title: "Vornado OSCR37 Tower Fan and Air Circulator with Remote, Smooth Oscillation, Timer and Touch Controls, 37\"",
         rating: 4.5,
         reviews: 3,
@@ -154,7 +181,8 @@ export const store = [
     },
     {
         id: "V02",
-        image: "./imgs/vornadoFan02.jpg",
+        imageBig: "./imgs/vornadoFan02.jpg",
+        imageSmall: "./imgs/vornadoFanS02.jpg",
         title: "Vornado NGT335 Air Circulator Tower Fan with Remote Control and Versa-Flow, 33\", NGT335-33, Black",
         rating: 4.5,
         reviews: 6,
