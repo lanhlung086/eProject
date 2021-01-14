@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Nav from "./Duy/Nav";
 import Home from "./Duy/Home";
+import Product from "./Tung/Product";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
                   <Home/>
               </Route>
               <Route exact path="/product">
-
+                  <Product/>
               </Route>
               <Route exact path="/project">
 
