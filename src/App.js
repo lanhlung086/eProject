@@ -3,6 +3,9 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Nav from "./Duy/Nav";
 import Home from "./Duy/Home";
 import Product from "./Tung/Product";
+import Project from "./Quy/Project";
+import About from "./Quy/About";
+import ContactUs from "./Ngọc/Contactus";
 
 function App() {
   return (
@@ -17,13 +20,13 @@ function App() {
                   <Product/>
               </Route>
               <Route exact path="/project">
-
+                  <Project></Project>
               </Route>
               <Route exact path="/aboutus">
-
+                  <About></About>
               </Route>
               <Route exact path="/contact">
-
+                  <ContactUs></ContactUs>
               </Route>
               <Route exact path="/news">
 
