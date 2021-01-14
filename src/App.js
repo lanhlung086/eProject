@@ -2,8 +2,6 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Nav from "./Duy/Nav";
 import Home from "./Duy/Home";
-import Project from "./Quy/Project";
-import About from "./Quy/About";
 
 function App() {
   return (
@@ -18,10 +16,10 @@ function App() {
 
               </Route>
               <Route exact path="/project">
-                  <Project/>
+
               </Route>
               <Route exact path="/aboutus">
-                  <About/>
+
               </Route>
               <Route exact path="/contact">
 
