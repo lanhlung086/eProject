@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animation:hover {
+    -webkit-transform:scale(1.2); transform:scale(1.2);
+}
+.animation {
+    -webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+    width: 100%;
+
+}
+.animation1:hover {
+    -webkit-transform:scale(1.2); transform:scale(1.2);
+}
+.animation1 {
+    -webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+    max-width: 100%;
+    height: auto;
+
+}
+/*.on{*/
+/*    background: white;*/
+/*}*/
+.range{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+.cc{
+    color: black;
+    text-decoration: none ;
+    overflow: hidden;
+    display: inline-block;
+}

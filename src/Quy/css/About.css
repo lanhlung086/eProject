@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.anh{
+    width: 100%;
+    height: 200px;
+}
+.introduce1{
+    color: #0072bc;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Hanalei Fill', cursive;
+}
+p.range{
+    word-spacing: 10px;
+}
+.mission1{
+    height: 180px;
+    width: 220px;
+}
+.mission2{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+.orientation1{
+    height: 180px;
+    width: 220px;
+}
+.orientation2{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+.capacity1{
+    height: 180px;
+    width: 220px;
+}
+.capacity2{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+.sexy{
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+}
+.ket{
+    font-size: 80px;
+    color: #A9D0F5;
+}
