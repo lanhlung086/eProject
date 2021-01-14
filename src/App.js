@@ -2,8 +2,10 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Nav from "./Duy/Nav";
 import Home from "./Duy/Home";
-import ContactUs from "./Ngọc/Contactus";
+import Product from "./Tung/Product";
+import Project from "./Quy/Project";
 import About from "./Quy/About";
+import ContactUs from "./Ngọc/Contactus";
 
 function App() {
   return (
@@ -15,10 +17,10 @@ function App() {
                   <Home/>
               </Route>
               <Route exact path="/product">
-
+                  <Product/>
               </Route>
               <Route exact path="/project">
-
+                  <Project></Project>
               </Route>
               <Route exact path="/aboutus">
                   <About/>
