@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+.title{
+    font-weight: bolder;
+    text-align: center;
+}
+.title1{
+    font-size: 18px;
+}
+.product-main{
+    width: auto;
+    display: flex;
+}
+.sidebar{
+    flex: 15%;
+    /*position: sticky;*/
+    background-color: #e5e0e0;
+    padding: 5px;
+    /*align-self: flex-start;*/
+}
+.detail{
+    flex: 75%;
+}
+.quang-cao{
+    flex: 10%;
+    position: sticky;
+    top:40px;
+    align-self: flex-start;
+}
+
+.productpic{
+    max-width: 100%;
+    height: auto;
+}
+/*.colum{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+/*star rate*/
+.colum{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1 img{
+    max-width: 100%;
+    object-fit: scale-down;
+}
+.itemlist{
+    width: 25%;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+.item1{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 10px;
+}
+.item1 .product-name{
+    height: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8c8c8c ;
+    overflow: hidden;
+}
+.item1 .douprice{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.item1 .price{
+    font-size: 16px;
+    color : #cd1a1a;
+    margin-right: 20%;
+    /*font-family: "lato", "sans-serif";*/
+}
+.item1 .oldprice{
+    color: #8c8c8c;
+    font-size: 16px;
+    text-decoration: line-through ;
+    font-family: "Roboto", "sans-serif";
+}
+.item1 .moredetail{
+    display: flex;
+    justify-content: center;
+    padding: 3px ;
+    font-size: 12px;
+    font-weight: 700;
+    background-image:linear-gradient(to bottom, #e7c869, #f0c14b);
+    border: 1px solid #835f00;
+    border-radius: 3px;
+    color: black;
+}
+.item1 .moredetail:hover{
+    background-image: linear-gradient(to bottom, #e0ab34, #e0ab34);
+    text-decoration: none;
+}
+.item1 .moredetail:focus{
+    outline: none;
+    text-decoration: none;
+}
+.item1 .moredetail:active{
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    outline: none;
+    text-decoration: none;
+}
+.item1 .ratting{
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    margin: 10px 0;
+}
+.star-box{
+    float: left;
+    /*margin-left: calc((100% - 80px)/2);*/
+    width: 80px;
+    height: 16px;
+    background-image: url("../imgs/star-off.png");
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+}
+.star-box .star-rate{
+    float: left;
+    height: 16px;
+    background-image: url("../imgs/icons8-star-32.png");
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+}
+.hmratting{
+    font-size: 14px;
+    margin-top: 8px;
+}
+/*category*/
+.sidebar-title{
+    margin-bottom: 25px;
+}
+.menu-category{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.category{
+    transition: background-color 300ms; border-bottom: 1px solid #8e95a7;
+    color: #242323;
+    text-decoration: none !important;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.category:focus,.category:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.category:visited{
+    background-color: #333333;
+}
+.category:active{
+    background-color: #333333;
+}
+.submenu-category{
+    display: none;
+    color: whitesmoke;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    background-color: #eae7e7;
+}
+.tungmenu--modifier + .submenu-category{
+    display: block;
+    transition: width 0.5s ;
+}
+.product-category{
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.link-category {
+    display: flex;
+    flex-direction: column;
+    color: #242323;
+    text-decoration: none !important;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.link-category:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.link-category:visited {
+    text-decoration: none;
+}
+.link-category:active {
+    text-decoration: none;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+/*-- checkboc --*/
+.booking{
+    color: black;
+    font-weight: lighter;
+    margin: 0;
+}
+.booking:hover{
+    color: #ffc003;
+}
+.star-booking{
+    cursor: pointer;
+}
+.star-booking:hover{
+    color: #ffc003;
+}
