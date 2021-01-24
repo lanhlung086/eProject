@@ -2,12 +2,16 @@ import React from 'react';
 import "./css/Nav.css";
 import {useEffect} from 'react';
 import {Link} from "react-router-dom";
+import {useStateValue} from "./StateProvider";
+import {getBasketItemTotal} from "./reducer";
 
 function Nav() {
+    const [{cart}, dispatch] = useStateValue();
     useEffect(() => {
         let navLinks = document.querySelectorAll(".navMain__menu > li");
         let productLink = document.querySelector(".navMain__productLink");
         let dropdownMenu = document.querySelector(".navMain__dropdownMenu");
+        let backToTop = document.querySelector(".nav__backToTop");
 
         navLinks.forEach((a) => {
             a.addEventListener("click", (e) => {
@@ -23,13 +27,23 @@ function Nav() {
         productLink.addEventListener("mouseleave", () => {
             dropdownMenu.style.transition = "transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease";
         })
-    }, [])
+        backToTop.addEventListener("click", () => {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        })
+    }, [cart])
     return (
-        <nav className="nav">
+        <nav className="nav" id="navTop">
+            <div className="nav__backToTop">
+                <i className="fas fa-arrow-up"></i>
+            </div>
             <div className="navSub">
                 <div className="navSub__logo">
                     <Link to="/">
-                        <h3>FAN<img className="navSub__logo" src="imgs/fan-logo.png" alt="FANoFAN Logo"/>FAN</h3>
+                        <h3>Fan<img className="navSub__logo" src="imgs/fan-logo.png" alt="FANoFAN Logo"/>Fan</h3>
                     </Link>
                 </div>
                 <div className="navSub__deliver">
@@ -47,23 +61,27 @@ function Nav() {
                 </div>
                 <div className="navSub__signIn">
                     <span>Hello</span>
-                    <span>Sign In</span>
+                    <Link to="/signin">Sign In</Link>
                 </div>
                 <div className="navSub__orders">
-                    <span>Returns</span>
-                    <span>& Orders</span>
+                    <Link to="/signin">
+                        <span>Returns</span>
+                        <span>& Orders</span>
+                    </Link>
                 </div>
                 <div className="navSub__basket">
-                    <i className="fab fa-opencart fa-lg"></i>
-                    <span className="navSub__counter">0</span>
-                    <span>Cart</span>
+                    <Link to="/checkout">
+                        <i className="fab fa-opencart fa-lg"></i>
+                        <span className="navSub__counter">{getBasketItemTotal(cart)}</span>
+                        <span>Cart</span>
+                    </Link>
                 </div>
             </div>
             <div className="navMain">
                 <ul className="navMain__menu">
                     <li><Link to="/">Home</Link></li>
                     <li className="navMain__productLink">
-                        <Link to="/product">Product</Link>
+                        <Link to="/products">Product</Link>
                         <i className="fas fa-angle-down"></i>
                         <ul className="navMain__dropdownMenu">
                             <li>
