@@ -16,7 +16,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-          <Nav/>
           <Switch>
               <Route exact path="/">
                   <ScrollToTop/>
