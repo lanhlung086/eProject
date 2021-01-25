@@ -77,7 +77,6 @@ body{
     color: black;
 }
 .item1{
-    background-color: #fafafa;
     display: flex;
     flex-direction: column;
     overflow: hidden;

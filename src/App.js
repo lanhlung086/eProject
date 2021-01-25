@@ -22,42 +22,50 @@ function App() {
                   <ScrollToTop/>
                   <Nav/>
                   <Home/>
+                  <Footer/>
               </Route>
               <Route exact path="/products">
                   <ScrollToTop/>
                   <Nav/>
                   <Product/>
+                  <Footer/>
               </Route>
               <Route exact path="/productdetail/:id" render={(props) =>
                   <>
                       <ScrollToTop/>
                       <Nav/>
                       <Detail id={props.match.params.id}/>
+                      <Footer/>
                   </>
               }/>
               <Route exact path="/project">
                   <ScrollToTop/>
                   <Nav/>
                   <Project/>
+                  <Footer/>
               </Route>
               <Route exact path="/aboutus">
                   <ScrollToTop/>
                   <Nav/>
                   <About/>
+                  <Footer/>
               </Route>
               <Route exact path="/contact">
                   <ScrollToTop/>
                   <Nav/>
                   <ContactUs/>
+                  <Footer/>
               </Route>
               <Route exact path="/news">
                   <ScrollToTop/>
                   <Nav/>
+                  <Footer/>
               </Route>
               <Route exact path="/checkout">
                   <ScrollToTop/>
                   <Nav/>
                   <Checkout/>
+                  <Footer/>
               </Route>
               <Route exact path="/signin">
                   <ScrollToTop/>
@@ -68,7 +76,6 @@ function App() {
                   <SignUp/>
               </Route>
           </Switch>
-          <Footer/>
       </div>
     </BrowserRouter>
   );

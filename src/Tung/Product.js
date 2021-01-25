@@ -328,7 +328,6 @@ export default function Product() {
                         <div className="colum " id="products">
                             {
                                 products.map((e,i)=> {
-
                                     return (
                                         <div key={i} className="itemlist">
                                             <a href='#' className="item1">
