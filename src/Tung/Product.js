@@ -2,6 +2,7 @@ import React from 'react';
 import "./css/Product.css" ;
 import {useEffect,useState} from 'react';
 import {store} from "../Duy/Store";
+import {Link} from "react-router-dom";
 
 export default function Product() {
     const [products,setProducts] = useState([]);
@@ -13,11 +14,24 @@ export default function Product() {
         var tung=document.getElementsByClassName("category");
         for(let i=0;i<tung.length;i++){
             tung[i].onclick=function () {
-                var d = i ;
+                var d=i;
                 tung[d].classList.toggle('tungmenu--modifier')
             }
         }
+        window.onload=function buttonActive() {
+            const duynude=document.querySelector(".button_detail");
+            console.log(duynude);
+            duynude.addEventListener("mousedown", (e) => {
+                e.currentTarget.classList.add("button--active")
+            })
+            window.addEventListener("mouseup", () => {
+                duynude.classList.remove("button--active")
+            })
+            buttonActive();
+        }
+
     },[])
+
 
     // useEffect(() => {
     //     var list_html1 ="";
@@ -233,6 +247,9 @@ export default function Product() {
     // },[])
     return (
         <section className="section main">
+            <div className="product-image-ad">
+
+            </div>
             <div className="product-main">
                 <div className="productlist sidebar">
                     {/*<h2 className="title1">Category</h2>*/}
@@ -330,13 +347,13 @@ export default function Product() {
                                 products.map((e,i)=> {
                                     return (
                                         <div key={i} className="itemlist">
-                                            <a href='#' className="item1">
+                                            <div className="item1">
                                                 <img className="product-image" src={e.imageBig01} height="230"
                                                      width="300"/>
                                                 <h2 className="product-name">{e.brand}</h2>
-                                                <div className="title3">
+                                                <Link to="#" className="title3">
                                                     {e.title}
-                                                </div>
+                                                </Link>
                                                 <div className="douprice">
                                                     <div className="price">${e.price}"</div>
                                                     <div className="oldprice">{e.listPrice}</div>
@@ -349,7 +366,10 @@ export default function Product() {
                                                     </div>
                                                     <a className="hmratting" href="#">{e.reviews} reviews</a>
                                                 </div>
-                                            </a>
+                                                <Link to="#"  className="button_detail">
+                                                    More Detail
+                                                </Link>
+                                            </div>
                                         </div>)
                                 })
                             }
