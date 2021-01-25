@@ -3,6 +3,7 @@ import "./css/Product.css" ;
 import {useEffect,useState} from 'react';
 import {store} from "../Duy/Store";
 import {Link} from "react-router-dom";
+import ProductList from "./ProductList";
 
 export default function Product() {
     const [products,setProducts] = useState([]);
@@ -18,19 +19,8 @@ export default function Product() {
                 tung[d].classList.toggle('tungmenu--modifier')
             }
         }
-        window.onload=function buttonActive() {
-            const duynude=document.querySelector(".button_detail");
-            console.log(duynude);
-            duynude.addEventListener("mousedown", (e) => {
-                e.currentTarget.classList.add("button--active")
-            })
-            window.addEventListener("mouseup", () => {
-                duynude.classList.remove("button--active")
-            })
-            buttonActive();
-        }
 
-    },[])
+    },)
 
 
     // useEffect(() => {
@@ -337,40 +327,26 @@ export default function Product() {
                 <div className="productlist detail">
                     {/*<h2 className="title1">Productlist</h2>*/}
                     <select id="sortby">
-                        <option value="?sort=">Đánh giá cao nhất</option>
-                        <option id="highlow" selected value="?sort=price-high">Giá(cao đến thấp)</option>
-                        <option value="?sort=price-low">Giá(thấp đến cao)</option>
+                        <option value="?sort=">Top rated</option>
+                        <option id="highlow" selected value="?sort=price-high">Price (high to low)</option>
+                        <option value="?sort=price-low">Price (low to high)</option>
                     </select>
                     <div className="colum-list">
                         <div className="colum " id="products">
                             {
                                 products.map((e,i)=> {
                                     return (
-                                        <div key={i} className="itemlist">
-                                            <div className="item1">
-                                                <img className="product-image" src={e.imageBig01} height="230"
-                                                     width="300"/>
-                                                <h2 className="product-name">{e.brand}</h2>
-                                                <Link to="#" className="title3">
-                                                    {e.title}
-                                                </Link>
-                                                <div className="douprice">
-                                                    <div className="price">${e.price}"</div>
-                                                    <div className="oldprice">{e.listPrice}</div>
-                                                </div>
-                                                <div className="ratting">
-                                                    <div className="star">
-                                                        <div className="star-box">
-                                                            <div className="star-rate" style={{width: e.rating / 5 * 100 + "%"}}> </div>
-                                                        </div>
-                                                    </div>
-                                                    <a className="hmratting" href="#">{e.reviews} reviews</a>
-                                                </div>
-                                                <Link to="#"  className="button_detail">
-                                                    More Detail
-                                                </Link>
-                                            </div>
-                                        </div>)
+                                        <ProductList
+                                            key={e.id}
+                                            image={e.imageBig01}
+                                            title={e.title}
+                                            brand={e.brand}
+                                            rating={e.rating()}
+                                            review={e.reviews()}
+                                            price={e.price}
+                                            listPrice={e.listPrice}
+                                        />
+                                    )
                                 })
                             }
                         </div>
