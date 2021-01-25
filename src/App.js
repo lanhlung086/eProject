@@ -5,7 +5,8 @@ import Home from "./Duy/Home";
 import Product from "./Tung/Product";
 import Project from "./Quy/Project";
 import About from "./Quy/About";
-import ContactUs from "./Ngọc/Contactus";
+import ContactUs from "./Ngọc/Contactus"
+import Footer from "./Tung/Footer";
 import ScrollToTop from "./Duy/ScrollToTop";
 import Detail from "./Khai/Detail";
 import SignUp from "./Duy/SignUp";
@@ -67,6 +68,7 @@ function App() {
                   <SignUp/>
               </Route>
           </Switch>
+          <Footer/>
       </div>
     </BrowserRouter>
   );

@@ -1,125 +1,15 @@
 import React from 'react';
 import "./css/Product.css" ;
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 import {store} from "../Duy/Store";
 
 export default function Product() {
-    useEffect(() => {
-        var pricetag= store.filter(function (products) {
-            return products.price <= 50;
-        })
-
-        var products_html = document.getElementById("products");
-        var price2 =document.getElementById("checkerduy");
-        function f() {
-            price2.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f();
-
-        var pricetag1= store.filter(function (products) {
-            return products.price > 50&& products.price<=100 ;
-        })
-
-        var price3 =document.getElementById("checkertung");
-        function f2() {
-            price3.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag1.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag1[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag1[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag1[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag1[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag1[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag1[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f2();
-
-        var pricetag2= store.filter(function (products) {
-            return products.price > 100&& products.price<=200 ;
-        })
-
-        var price4 =document.getElementById("checkerquy");
-        function f3() {
-            price4.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag2.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag2[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag2[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag2[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag2[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag2[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag2[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f3();
-
+    const [products,setProducts] = useState([]);
+    var pricetag= store.filter(function (products) {
+        return products.price <= 50;
+    })
+    useEffect(()=>{
+        setProducts(store)
         var tung=document.getElementsByClassName("category");
         for(let i=0;i<tung.length;i++){
             tung[i].onclick=function () {
@@ -127,53 +17,225 @@ export default function Product() {
                 tung[d].classList.toggle('tungmenu--modifier')
             }
         }
+    },[])
 
-        // XEP THEO GIA
-        var star1= store.filter(function (products) {
-            return products.rating >= 4;
-        })
-        console.log(star1);
+    // useEffect(() => {
+    //     var list_html1 ="";
+    //     var list_html2="";
+    //
+    //
+    //     var pricetag= store.filter(function (products) {
+    //         return products.price <= 50;
+    //     })
+    //     setProducts(pricetag);
+    //     var products_html = document.getElementById("products");
+    //     var price2 =document.getElementById("checkerduy");
+    //     function f() {
+    //         price2.onclick =function (e) {
+    //             // var price1 = "";
+    //            if(e.target.checked) {
+    //                for(var i=0;i<pricetag.length;i++){
+    //                    list_html1 += "<div class=\"itemlist\">\n" +
+    //                        "                     <a href='/product/"+2+"' class=\"item1\">\n" +
+    //                        "                       <img class=\"product-image\" src=\""+pricetag[i].imageBig+"\" height=\"230\" width=\"300\"/>\n" +
+    //                        "                         <h2 class=\"product-name\">"+pricetag[i].brand+"</h2>\n" +
+    //                        "                    <div class=\"title3\">"+pricetag[i].title+"</div>\n" +
+    //                        "                <div class=\"douprice\">\n" +
+    //                        "                    <div class=\"price\">$"+pricetag[i].price+"</div>\n" +
+    //                        "                    <div class=\"oldprice\">"+pricetag[i].listPrice+"</div>\n" +
+    //                        "                </div>\n" +
+    //                        "                <div class=\"ratting\">\n" +
+    //                        "                    <div class=\"star\">\n" +
+    //                        "                             <div class=\"star-box\">\n" +
+    //                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag[i].rating/5*100)+"%\"></div>\n" +
+    //                        "                             </div>\n" +
+    //                        "                    </div>\n" +
+    //                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag[i].reviews+
+    //                        "                    </a>\n" +
+    //                        "                </div>\n" +
+    //                        // "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
+    //                        "            </a>\n" +
+    //                        "        </div>";
+    //                }
+    //
+    //                products_html.innerHTML = products_html.innerHTML +list_html1;
+    //            }else {
+    //
+    //                products_html.innerHTML = products_html.innerHTML.replace(list_html1, "");
+    //            }
+    //
+    //         }
+    //     }
+    //
+    //     f();
+    //
+    //     var pricetag1= store.filter(function (products) {
+    //         return products.price > 50&& products.price<=100 ;
+    //     })
+    //
+    //     var price3 =document.getElementById("checkertung");
+    //     function f2() {
+    //         price3.onclick =function (e) {
+    //             // var list_html2 = "";
+    //           if(e.target.checked){
+    //               for(var i=0;i<pricetag1.length;i++){
+    //                   list_html2 += "<div class=\"itemlist\">\n" +
+    //                       "                     <a href='#' class=\"item1\">\n" +
+    //                       "                       <img class=\"product-image\" src=\""+pricetag1[i].imageBig+"\" height=\"230\" width=\"300\"/>\n" +
+    //                       "                         <h2 class=\"product-name\">"+pricetag1[i].brand+"</h2>\n" +
+    //                       "                    <div class=\"title3\">"+pricetag1[i].title+"</div>\n" +
+    //                       "                <div class=\"douprice\">\n" +
+    //                       "                    <div class=\"price\">$"+pricetag1[i].price+"</div>\n" +
+    //                       "                    <div class=\"oldprice\">"+pricetag1[i].listPrice+"</div>\n" +
+    //                       "                </div>\n" +
+    //                       "                <div class=\"ratting\">\n" +
+    //                       "                    <div class=\"star\">\n" +
+    //                       "                             <div class=\"star-box\">\n" +
+    //                       "                                 <div class=\"star-rate\" style=\"width:"+(pricetag1[i].rating/5*50)+"%\"></div>\n" +
+    //                       "                             </div>\n" +
+    //                       "                    </div>\n" +
+    //                       "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag1[i].reviews+
+    //                       "                    reviews</a>\n" +
+    //                       "                </div>\n" +
+    //                       // "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
+    //                       "            </a>\n" +
+    //                       "        </div>";
+    //               }
+    //
+    //               products_html.innerHTML = products_html.innerHTML+list_html2;
+    //           }else {
+    //               products_html.innerHTML=products_html.innerHTML.replace(list_html2,"");
+    //           }
+    //
+    //         }
+    //     }
+    //
+    //     f2();
+    //
+    //     var pricetag2= store.filter(function (products) {
+    //         return products.price > 100&& products.price<=200 ;
+    //     })
+    //
+    //     var price4 =document.getElementById("checkerquy");
+    //     function f3() {
+    //         price4.onclick =function () {
+    //             var list_html = "";
+    //             for(var i=0;i<pricetag2.length;i++){
+    //                 list_html += "<div class=\"itemlist\">\n" +
+    //                     "                     <a href='#' class=\"item1\">\n" +
+    //                     "                       <img class=\"product-image\" src=\""+pricetag2[i].imageBig+"\" height=\"230\" width=\"300\"/>\n" +
+    //                     "                         <h2 class=\"product-name\">"+pricetag2[i].brand+"</h2>\n" +
+    //                     "                    <div class=\"title3\">"+pricetag2[i].title+"</div>\n" +
+    //                     "                <div class=\"douprice\">\n" +
+    //                     "                    <div class=\"price\">$"+pricetag2[i].price+"</div>\n" +
+    //                     "                    <div class=\"oldprice\">"+pricetag2[i].listPrice+"</div>\n" +
+    //                     "                </div>\n" +
+    //                     "                <div class=\"ratting\">\n" +
+    //                     "                    <div class=\"star\">\n" +
+    //                     "                             <div class=\"star-box\">\n" +
+    //                     "                                 <div class=\"star-rate\" style=\"width:"+(pricetag2[i].rating/5*100)+"%\"></div>\n" +
+    //                     "                             </div>\n" +
+    //                     "                    </div>\n" +
+    //                     "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag2[i].reviews+
+    //                     "                    reviews</a>\n" +
+    //                     "                </div>\n" +
+    //                     // "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
+    //                     "            </a>\n" +
+    //                     "        </div>";
+    //             }
+    //
+    //             products_html.innerHTML = list_html;
+    //
+    //         }
+    //     }
+    //
+    //     f3();
+    //
+    //     store.sort(function (a,b) {
+    //         return parseFloat(a.price)- parseFloat(b.price);
+    //     })
+    //
+    //     var sort=document.getElementById("highlow");
+    //     function s1() {
+    //         sort.onclick=function () {
+    //             var list_html = "";
+    //             for(var i=0;i<pricetag2.length;i++){
+    //                 list_html += "<div class=\"itemlist\">\n" +
+    //                     "                     <a href='#' class=\"item1\">\n" +
+    //                     "                       <img class=\"product-image\" src=\""+star1[i].imageBig+"\" height=\"230\" width=\"300\"/>\n" +
+    //                     "                         <h2 class=\"product-name\">"+star1[i].brand+"</h2>\n" +
+    //                     "                    <div class=\"title3\">"+star1[i].title+"</div>\n" +
+    //                     "                <div class=\"douprice\">\n" +
+    //                     "                    <div class=\"price\">$"+star1[i].price+"</div>\n" +
+    //                     "                    <div class=\"oldprice\">"+star1[i].listPrice+"</div>\n" +
+    //                     "                </div>\n" +
+    //                     // "                    <p class=\"title4\">Ratings and Reviews</p>\n" +
+    //                     "                <div class=\"ratting\">\n" +
+    //                     "                    <div class=\"star\">\n" +
+    //                     "                             <div class=\"star-box\">\n" +
+    //                     "                                 <div class=\"star-rate\" style=\"width:"+(star1[i].rating/5*100)+"%\"></div>\n" +
+    //                     "                             </div>\n" +
+    //                     "                    </div>\n" +
+    //                     "                    <a class=\"hmratting\" href=\"#\">\n" +star1[i].reviews+
+    //                     "                    reviews</a>\n" +
+    //                     "                </div>\n" +
+    //                     // "                <a href=\"#\" class=\"moredetail\">MORE DETAIL</a>\n" +
+    //                     "            </a>\n" +
+    //                     "        </div>";
+    //             }
+    //             }
+    //         }
+    //     s1();
+    //
 
-        var star =document.getElementById("star4");
-        function F1() {
-            star.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<star1.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+star1[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+star1[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(star1[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +star1[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+star1[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+star1[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        F1();
-
-    })
+    //
+    //     // XEP THEO GIA
+    //     var star1= store.filter(function (products) {
+    //         return products.rating >= 4;
+    //     })
+    //
+    //     var star =document.getElementById("star4");
+    //     function F1() {
+    //         star.onclick =function () {
+    //             var list_html = "";
+    //             for(var i=0;i<star1.length;i++){
+    //                 list_html += "<div class=\"itemlist\">\n" +
+    //                     "                     <a href='#' class=\"item1\">\n" +
+    //                     "                       <img class=\"product-image\" src=\""+star1[i].imageBig+"\" height=\"230\" width=\"300\"/>\n" +
+    //                     "                         <h2 class=\"product-name\">"+star1[i].brand+"</h2>\n" +
+    //                     "                    <div class=\"title3\">"+star1[i].title+"</div>\n" +
+    //                     "                <div class=\"douprice\">\n" +
+    //                     "                    <div class=\"price\">$"+star1[i].price+"</div>\n" +
+    //                     "                    <div class=\"oldprice\">"+star1[i].listPrice+"</div>\n" +
+    //                     "                </div>\n" +
+    //                     // "                    <p class=\"title4\">Ratings and Reviews</p>\n" +
+    //                     "                <div class=\"ratting\">\n" +
+    //                     "                    <div class=\"star\">\n" +
+    //                     "                             <div class=\"star-box\">\n" +
+    //                     "                                 <div class=\"star-rate\" style=\"width:"+(star1[i].rating/5*100)+"%\"></div>\n" +
+    //                     "                             </div>\n" +
+    //                     "                    </div>\n" +
+    //                     "                    <a class=\"hmratting\" href=\"#\">\n" +star1[i].reviews+
+    //                     "                    reviews</a>\n" +
+    //                     "                </div>\n" +
+    //                     // "                <a href=\"#\" class=\"moredetail\">MORE DETAIL</a>\n" +
+    //                     "            </a>\n" +
+    //                     "        </div>";
+    //             }
+    //
+    //             products_html.innerHTML = list_html;
+    //
+    //         }
+    //     }
+    //
+    //     F1();
+    //
+    // },[])
     return (
         <section className="section main">
             <div className="product-main">
                 <div className="productlist sidebar">
-                    <h2 className="title">Category</h2>
+                    {/*<h2 className="title1">Category</h2>*/}
                     <div className="menu-category">
                         <a className="category" href="#">Ceiling Fan</a>
                         <div className="submenu-category">
@@ -256,10 +318,42 @@ export default function Product() {
                     </div>
                 </div>
                 <div className="productlist detail">
-                    <h2 className="title">Productlist</h2>
+                    {/*<h2 className="title1">Productlist</h2>*/}
+                    <select id="sortby">
+                        <option value="?sort=">Đánh giá cao nhất</option>
+                        <option id="highlow" selected value="?sort=price-high">Giá(cao đến thấp)</option>
+                        <option value="?sort=price-low">Giá(thấp đến cao)</option>
+                    </select>
                     <div className="colum-list">
                         <div className="colum " id="products">
+                            {
+                                products.map((e,i)=> {
 
+                                    return (
+                                        <div key={i} className="itemlist">
+                                            <a href='#' className="item1">
+                                                <img className="product-image" src={e.imageBig01} height="230"
+                                                     width="300"/>
+                                                <h2 className="product-name">{e.brand}</h2>
+                                                <div className="title3">
+                                                    {e.title}
+                                                </div>
+                                                <div className="douprice">
+                                                    <div className="price">${e.price}"</div>
+                                                    <div className="oldprice">{e.listPrice}</div>
+                                                </div>
+                                                <div className="ratting">
+                                                    <div className="star">
+                                                        <div className="star-box">
+                                                            <div className="star-rate" style={{width: e.rating / 5 * 100 + "%"}}> </div>
+                                                        </div>
+                                                    </div>
+                                                    <a className="hmratting" href="#">{e.reviews} reviews</a>
+                                                </div>
+                                            </a>
+                                        </div>)
+                                })
+                            }
                         </div>
                     </div>
                 </div>
