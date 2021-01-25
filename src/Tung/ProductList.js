@@ -25,12 +25,12 @@ export default function ProductList({id, image, brand, title, price, listPrice, 
             <div className="item1">
                 <img className="product-image" src={image} height="230"
                      width="300"/>
-                <h2 className="product-name">{brand}</h2>
-                <Link to="#" className="title3">
+                {/*<h2 className="product-name">{brand}</h2>*/}
+                <Link to={`/productdetail/${id}`} className="title3">
                     {title}
                 </Link>
                 <div className="douprice">
-                    <div className="price">${price}"</div>
+                    <div className="price">${price}</div>
                     <div className="oldprice">{listPrice}</div>
                 </div>
                 <div className="ratting">
@@ -41,7 +41,7 @@ export default function ProductList({id, image, brand, title, price, listPrice, 
                     </div>
                     <a className="hmratting" href="#">{review} reviews</a>
                 </div>
-                <Link to="#"  className="button_detail">
+                <Link to={`/productdetail/${id}`}  className="button_detail">
                     More Detail
                 </Link>
             </div>
