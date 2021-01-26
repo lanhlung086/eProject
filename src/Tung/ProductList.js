@@ -1,10 +1,9 @@
 import React from 'react';
 import "./css/Product.css" ;
 import {useEffect,useState} from 'react';
-import {store} from "../Duy/Store";
 import {Link} from "react-router-dom";
 
-export default function ProductList({id, image, brand, title, price, listPrice, rating, review}) {
+export default function ProductList({id, image, title, price, listPrice, rating, review}) {
     useEffect(()=>{
         function buttonActive() {
             let duynude=document.querySelectorAll(".button_detail");
@@ -25,7 +24,6 @@ export default function ProductList({id, image, brand, title, price, listPrice, 
             <div className="item1">
                 <img className="product-image" src={image} height="230"
                      width="300"/>
-                {/*<h2 className="product-name">{brand}</h2>*/}
                 <Link to={`/productdetail/${id}`} className="title3">
                     {title}
                 </Link>

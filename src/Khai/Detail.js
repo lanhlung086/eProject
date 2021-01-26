@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import {Link} from "react-router-dom";
 import './css/Detail.css';
 import {store} from "../Duy/Store";
 import ProductRecommend from "./ProductRecommend";

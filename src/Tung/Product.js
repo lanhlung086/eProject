@@ -246,6 +246,7 @@ export default function Product() {
                                     return (
                                         <ProductList
                                             key={e.id}
+                                            id={e.id}
                                             image={e.imageBig01}
                                             title={e.title}
                                             brand={e.brand}
