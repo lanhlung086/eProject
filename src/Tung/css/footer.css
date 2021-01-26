@@ -1,0 +1,124 @@
+.footer-container a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-container{
+    position: relative;
+   overflow: hidden;
+}
+.footer-content{
+    color: #2389da;
+    padding: 0 2rem;
+}
+
+.footer-container, .footer-content, .footer{
+    display: flex;
+}
+.footer-content{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.footer-container, .footer-content{
+    flex-direction: column;
+}
+.text, .footer-title{
+    backface-visibility: hidden;
+}
+.strong{
+    font-size: 20px;
+}
+.footer-title{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    animation: hieu_ung_wave 0.5s ;
+    color: #000;
+    padding: 20px;
+    width: 100%;
+}
+.title-main {
+    padding: 20px;
+    width: 100%;
+}
+.title-main .fas{
+    margin: 10px;
+}
+.title-title{
+    margin-bottom: 15px;
+    border-bottom: 1px solid ;
+}
+.title-title-a{
+    font-size: 40px;
+    padding: 10px;
+}
+.title-title-a:hover{
+
+}
+.fake-a{
+    padding-left:5px;
+}
+.text{
+    max-width: 50rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    color: #000;
+    animation: hieu_ung_wave 0.5s 0.3s ;
+}
+
+.wave{
+    opacity: 0.6;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    width: 6000px;
+    height: 6000px;
+    background: #2389da !important;
+    margin-left: -3000px;
+    transform-origin: 50% 48%;
+    border-radius: 46%;
+    animation: wave 12s infinite linear;
+    pointer-events: none;
+    overflow: hidden;
+}
+.wave2{
+    animation: wave 28s infinite linear;
+    opacity: 0.3;
+}
+.wave3{
+    animation: wave 20s infinite linear;
+    opacity: 1;
+}
+.wave{
+    background: #000;
+}
+.footer-container{
+    position: relative;
+    background-color: #06224a;
+    z-index: 9;
+}
+@keyframes hieu_ung_wave{
+    from{
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes wave{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.text{
+    color: #fff;
+}
+.footer-title{
+    color: #fff;
+}

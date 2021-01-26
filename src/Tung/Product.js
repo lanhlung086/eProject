@@ -1,219 +1,190 @@
 import React from 'react';
 import "./css/Product.css" ;
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 import {store} from "../Duy/Store";
+import {Link} from "react-router-dom";
+import ProductList from "./ProductList";
 
 export default function Product() {
-    useEffect(() => {
-        var pricetag= store.filter(function (products) {
-            return products.price <= 50;
-        })
-
-        var products_html = document.getElementById("products");
-        var price2 =document.getElementById("checkerduy");
-        function f() {
-            price2.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f();
-
-        var pricetag1= store.filter(function (products) {
-            return products.price > 50&& products.price<=100 ;
-        })
-
-        var price3 =document.getElementById("checkertung");
-        function f2() {
-            price3.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag1.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag1[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag1[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag1[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag1[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag1[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag1[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f2();
-
-        var pricetag2= store.filter(function (products) {
-            return products.price > 100&& products.price<=200 ;
-        })
-
-        var price4 =document.getElementById("checkerquy");
-        function f3() {
-            price4.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<pricetag2.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+pricetag2[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+pricetag2[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(pricetag2[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +pricetag2[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+pricetag2[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+pricetag2[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
-        }
-
-        f3();
-
+    const [products,setProducts] = useState([...store]);
+    useEffect(()=>{
         var tung=document.getElementsByClassName("category");
         for(let i=0;i<tung.length;i++){
-            tung[i].onclick=function () {
-                var d = i ;
+            tung[i].onclick=function (e) {
+                e.preventDefault();
+                let d = i ;
                 tung[d].classList.toggle('tungmenu--modifier')
             }
         }
 
-        // XEP THEO GIA
-        var star1= store.filter(function (products) {
-            return products.rating >= 4;
-        })
-        console.log(star1);
+        const selectBrand = () => {
+            let minkaAireLink = document.querySelector(".minkaAireLink");
+            let craftmadeLink = document.querySelector(".craftmadeLink");
+            let kichlerLink = document.querySelector(".kichlerLink");
+            let monteCarloLink = document.querySelector(".monteCarloLink");
+            let casablancaLink = document.querySelector(".casablancaLink");
+            let quorumLink = document.querySelector(".quorumLink");
+            let laskoLink = document.querySelector(".laskoLink");
+            let honeywellLink = document.querySelector(".honeywellLink");
+            let vornadoLink = document.querySelector(".vornadoLink");
+            let ceilingFanLink = document.querySelector(".ceilingLink");
+            let towerFanLink = document.querySelector(".towerLink");
+            let mistingFanLink = document.querySelector(".mistingLink");
+            let exhaustFanLink = document.querySelector(".exhaustLink");
 
-        var star =document.getElementById("star4");
-        function F1() {
-            star.onclick =function () {
-                var list_html = "";
-                for(var i=0;i<star1.length;i++){
-                    list_html += "<div class=\"itemlist\">\n" +
-                        "                     <div class=\"item1\">\n" +
-                        "                       <img class=\"product-image\" src=\""+star1[i].imageSmall+"\" height=\"150\" width=\"100%\"/>\n" +
-                        "                         <h2 class=\"product-name\">"+star1[i].title+"</h2>\n" +
-                        "                <div class=\"ratting\">\n" +
-                        "                    <div class=\"star\">\n" +
-                        "                             <div class=\"star-box\">\n" +
-                        "                                 <div class=\"star-rate\" style=\"width:"+(star1[i].rating/5*100)+"%\"></div>\n" +
-                        "                             </div>\n" +
-                        "                    </div>\n" +
-                        "                    <a class=\"hmratting\" href=\"#\">\n" +star1[i].reviews+
-                        "                    reviews</a>\n" +
-                        "                </div>\n" +
-                        "                <div class=\"douprice\">\n" +
-                        "                    <div class=\"price\">$"+star1[i].price+"</div>\n" +
-                        "                    <div class=\"oldprice\">"+star1[i].listPrice+"</div>\n" +
-                        "                </div>\n" +
-                        "                <a href=\"#\" class=\"moredetail text-center\">MORE DETAIL</a>\n" +
-                        "            </div>\n" +
-                        "        </div>";
-                }
-
-                products_html.innerHTML = list_html;
-
-            }
+            minkaAireLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let minkaAireProducts = store.filter((e) => {
+                    return e.brand === "MINKA-AIRE";
+                })
+                setProducts(minkaAireProducts);
+            })
+            craftmadeLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let craftmadeProducts = store.filter((e) => {
+                    return e.brand === "Craftmade";
+                })
+                setProducts(craftmadeProducts);
+            })
+            kichlerLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let kichlerProducts = store.filter((e) => {
+                    return e.brand === "Kichler";
+                })
+                setProducts(kichlerProducts);
+            })
+            monteCarloLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let monteCarloProducts = store.filter((e) => {
+                    return e.brand === "Monte Carlo";
+                })
+                setProducts(monteCarloProducts);
+            })
+            casablancaLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let casablancaProducts = store.filter((e) => {
+                    return e.brand === "Casablanca";
+                })
+                setProducts(casablancaProducts);
+            })
+            quorumLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let quorumProducts = store.filter((e) => {
+                    return e.brand === "Quorum";
+                })
+                setProducts(quorumProducts);
+            })
+            laskoLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let laskoProducts = store.filter((e) => {
+                    return e.brand === "Lasko" && e.type === "Tower Fan";
+                })
+                setProducts(laskoProducts);
+            })
+            honeywellLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let honeywellProducts = store.filter((e) => {
+                    return e.brand === "Honeywell";
+                })
+                setProducts(honeywellProducts);
+            })
+            vornadoLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let vornadoProducts = store.filter((e) => {
+                    return e.brand === "Vornado";
+                })
+                setProducts(vornadoProducts);
+            })
+            ceilingFanLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let ceilingProducts = store.filter((e) => {
+                    return e.type === "Ceiling Fan";
+                })
+                setProducts(ceilingProducts);
+            })
+            towerFanLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let towerProducts = store.filter((e) => {
+                    return e.type === "Tower Fan";
+                })
+                setProducts(towerProducts);
+            })
+            mistingFanLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let mistingProducts = store.filter((e) => {
+                    return e.type === "Misting Fan";
+                })
+                setProducts(mistingProducts);
+            })
+            exhaustFanLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                let exhaustProducts = store.filter((e) => {
+                    return e.type === "Exhaust Fan";
+                })
+                setProducts(exhaustProducts);
+            })
         }
+        selectBrand();
 
-        F1();
-
-    })
+        const sortByPrice = () => {
+            let under50 = document.querySelector(".under50");
+            let checker50 = document.querySelector("#checker50");
+            let fiftyTo100 = document.querySelector(".fiftyTo100");
+            let checker50to100 = document.querySelector("#checker50to100");
+            let hundredTo150 = document.querySelector(".hundredTo150");
+            let checker100to150 = document.querySelector("#checker100to150");
+            let fifteenHundredTo200 = document.querySelector(".fifteenHundredTo200");
+            let checker150to200 = document.querySelector("#checker150to200");
+            let above200 = document.querySelector(".above200");
+            let checker200 = document.querySelector("#checker200");
+        }
+        sortByPrice()
+    },[])
+    // useEffect(() => {
+    //     setProducts(products);
+    // },[products])
     return (
         <section className="section main">
+            <div className="product-image-ad">
+
+            </div>
             <div className="product-main">
                 <div className="productlist sidebar">
-                    <h2 className="title">Category</h2>
+                    {/*<h2 className="title1">Category</h2>*/}
                     <div className="menu-category">
-                        <a className="category" href="#">Ceiling Fan</a>
+                        <a className="category ceilingLink" href="#">Ceiling Fan</a>
                         <div className="submenu-category">
-                            <a className="link-category" href="#">MinkaAire Fan</a>
-                            <a className="link-category" href="#">Craftmade Fan</a>
-                            <a className="link-category" href="#">Kichler Fan</a>
-                            <a className="link-category" href="#">Monte Carlo Fan</a>
-                            <a className="link-category" href="#">Casablanca Fan</a>
-                            <a className="link-category" href="#">Quorum Fan</a>
+                            <a className="link-category minkaAireLink" href="#">MinkaAire Fan</a>
+                            <a className="link-category craftmadeLink" href="#">Craftmade Fan</a>
+                            <a className="link-category kichlerLink" href="#">Kichler Fan</a>
+                            <a className="link-category monteCarloLink" href="#">Monte Carlo Fan</a>
+                            <a className="link-category casablancaLink" href="#">Casablanca Fan</a>
+                            <a className="link-category quorumLink" href="#">Quorum Fan</a>
                         </div>
-                        <a className="category" href="#">Tower Fan</a>
+                        <a className="category towerLink" href="#">Tower Fan</a>
                         <div className="submenu-category">
-                            <a className="link-category" href="#">Lasko Fan</a>
-                            <a className="link-category" href="#">Honeywell Fan</a>
-                            <a className="link-category" href="#">Vornado Fan</a>
+                            <a className="link-category laskoLink" href="#">Lasko Fan</a>
+                            <a className="link-category honeywellLink" href="#">Honeywell Fan</a>
+                            <a className="link-category vornadoLink" href="#">Vornado Fan</a>
                         </div>
-                        <a className="category" href="#">Misting Fan</a>
-                        <div className="submenu-category">
-
-                        </div>
-                        <a className="category" href="#">Exhaust Fan</a>
-                        <div className="submenu-category">
-
-                        </div>
+                        <a className="category mistingLink" href="#">Misting Fan</a>
+                        <a className="category exhaustLink" href="#">Exhaust Fan</a>
                         <h2 className="title1">Select Products By Price</h2>
 
-                        <label className="booking" htmlFor="checkerduy">
-                            <input id="checkerduy" type="checkbox"/> Under
+                        <label className="booking under50" htmlFor="checker50">
+                            <input id="checker50" type="checkbox"/> Under
                             $50</label><br/>
-                        <label className="booking" htmlFor="checkertung">
-                            <input id="checkertung" type="checkbox"/> $50 -
+                        <label className="booking fiftyTo100" htmlFor="checker50to100">
+                            <input id="checker50to100" type="checkbox"/> $50 -
                             $100</label><br/>
-                        <label className="booking" htmlFor="checkerquy">
-                            <input id="checkerquy" type="checkbox"/> $100 -
+                        <label className="booking hundredTo150" htmlFor="checker100to150">
+                            <input id="checker100to150" type="checkbox"/> $100 -
                             $150</label><br/>
-                        <label className="booking" htmlFor="checkerkhai">
-                            <input id="checkerkhai" type="checkbox"/> $150
+                        <label className="booking fifteenHundredTo200" htmlFor="checker150to200">
+                            <input id="checker150to200" type="checkbox"/> $150
                             - $200</label><br/>
-                        <label className="booking" htmlFor="checkerngoc">
-                            <input id="checkerngoc" type="checkbox"/> $200
+                        <label className="booking above200" htmlFor="checker200">
+                            <input id="checker200" type="checkbox"/> $200
                             & Above</label>
 
                         <h2 className="title1">Select Products By Rating</h2>
@@ -256,10 +227,36 @@ export default function Product() {
                     </div>
                 </div>
                 <div className="productlist detail">
-                    <h2 className="title">Productlist</h2>
+                    {/*<h2 className="title1">Productlist</h2>*/}
+                    <div className="sort_by">
+                        <strong>Sort By </strong>
+                        <select id="sortby">
+                            <option value="featured" selected>Featured</option>
+                            <option  id="highlow" value="?sort=price-high">Price
+                                (high to low)
+                            </option>
+                            <option  value="?sort=price-low">Price (low to high)
+                            </option>
+                        </select>
+                    </div>
                     <div className="colum-list">
                         <div className="colum " id="products">
-
+                            {
+                                products.map((e,i)=> {
+                                    return (
+                                        <ProductList
+                                            key={e.id}
+                                            image={e.imageBig01}
+                                            title={e.title}
+                                            brand={e.brand}
+                                            rating={e.rating()}
+                                            review={e.reviews()}
+                                            price={e.price}
+                                            listPrice={e.listPrice}
+                                        />
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>

@@ -5,31 +5,75 @@ import Home from "./Duy/Home";
 import Product from "./Tung/Product";
 import Project from "./Quy/Project";
 import About from "./Quy/About";
-import ContactUs from "./Ngọc/Contactus";
+import ContactUs from "./Ngọc/Contactus"
+import Footer from "./Tung/Footer";
+import ScrollToTop from "./Duy/ScrollToTop";
+import Detail from "./Khai/Detail";
+import SignUp from "./Duy/SignUp";
+import SignIn from "./Duy/SignIn";
+import Checkout from "./Duy/Checkout";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-          <Nav/>
           <Switch>
               <Route exact path="/">
+                  <ScrollToTop/>
+                  <Nav/>
                   <Home/>
+                  <Footer/>
               </Route>
-              <Route exact path="/product">
+              <Route exact path="/products">
+                  <ScrollToTop/>
+                  <Nav/>
                   <Product/>
+                  <Footer/>
               </Route>
+              <Route exact path="/productdetail/:id" render={(props) =>
+                  <>
+                      <ScrollToTop/>
+                      <Nav/>
+                      <Detail id={props.match.params.id}/>
+                      <Footer/>
+                  </>
+              }/>
               <Route exact path="/project">
-                  <Project></Project>
+                  <ScrollToTop/>
+                  <Nav/>
+                  <Project/>
+                  <Footer/>
               </Route>
               <Route exact path="/aboutus">
-                  <About></About>
-              </Route>1
+                  <ScrollToTop/>
+                  <Nav/>
+                  <About/>
+                  <Footer/>
+              </Route>
               <Route exact path="/contact">
-                  <ContactUs></ContactUs>
+                  <ScrollToTop/>
+                  <Nav/>
+                  <ContactUs/>
+                  <Footer/>
               </Route>
               <Route exact path="/news">
-
+                  <ScrollToTop/>
+                  <Nav/>
+                  <Footer/>
+              </Route>
+              <Route exact path="/checkout">
+                  <ScrollToTop/>
+                  <Nav/>
+                  <Checkout/>
+                  <Footer/>
+              </Route>
+              <Route exact path="/signin">
+                  <ScrollToTop/>
+                  <SignIn/>
+              </Route>
+              <Route exact path="/signup">
+                  <ScrollToTop/>
+                  <SignUp/>
               </Route>
           </Switch>
       </div>
