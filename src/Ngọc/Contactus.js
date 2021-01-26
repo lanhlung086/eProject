@@ -36,8 +36,7 @@ export default function ContactUs(){
                                                     <label>
                                                         Email<span className="saored">*</span>
                                                     </label>
-                                                    <input placeholder="
-Enter your email address" type="email" name="contact[email]" id="email" className="from-control" />
+                                                    <input placeholder="Enter your email address" type="email" name="contact[email]" id="email" className="from-control" />
                                                 </fieldset>
                                             </div>
                                             <div className="col-sm-12 col-xs-12">
