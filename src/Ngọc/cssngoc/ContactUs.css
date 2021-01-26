@@ -42,13 +42,14 @@ body {
     color: #363f4d;
 }
 
-.page-contact .login .title-tt{
+.page-contact .loginn .title-tt{
     font-size: 26px;
     line-height: 28px;
     margin: 0;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.4px;
+    background: w
 }
 
 .title-tt{
@@ -195,6 +196,10 @@ label{
     transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
     -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.nenbgr{
+    background:white;
+    height: 600px;
 }
 
 
