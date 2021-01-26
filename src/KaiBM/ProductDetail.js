@@ -38,7 +38,7 @@ function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, l
     return (
         <>
             <div className="main-body-left">
-                <div style={{height: "50%", position: "sticky", top: "0"}}>
+                <div style={{height: "350px", position: "sticky", top: "0"}}>
                     <div className="img-detail fade detailImg">
                         <img src={imageBig01} style={{width: '100%', height: "100%", objectFit: "contain"}}/>
                     </div>

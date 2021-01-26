@@ -43,7 +43,7 @@ export const store = [
                 detailedReview: [
                     "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
                 ]
-            }
+            },
         ]
     },
     {
@@ -131,12 +131,12 @@ export const store = [
         },
         price: 359.95,
         listPrice: null,
-        color: "Black",
+        color: "Brushed Nickel Wet",
         brand: "MINKA-AIRE",
-        dimension: null,
-        material: "Wood",
+        dimension: "54 x 54 x 12 inches",
+        material: null,
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: "Finished",
         type: "Ceiling Fan",
         bestSeller: false,
         sale: false,
