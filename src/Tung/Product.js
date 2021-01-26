@@ -6,9 +6,8 @@ import {Link} from "react-router-dom";
 import ProductList from "./ProductList";
 
 export default function Product() {
-    const [products,setProducts] = useState([]);
+    const [products,setProducts] = useState([...store]);
     useEffect(()=>{
-        setProducts(store);
         var tung=document.getElementsByClassName("category");
         for(let i=0;i<tung.length;i++){
             tung[i].onclick=function (e) {
@@ -138,23 +137,12 @@ export default function Product() {
             let checker150to200 = document.querySelector("#checker150to200");
             let above200 = document.querySelector(".above200");
             let checker200 = document.querySelector("#checker200");
-
-            under50.addEventListener("click", () => {
-                let holdValue = [...products];
-                if(checker50.checked) {
-                    console.log(products);
-                    let productsUnder50 = products.filter((e) => {
-                        return e.price < 50;
-                    })
-                    setProducts(productsUnder50);
-                }
-                else {
-                    setProducts(holdValue);
-                }
-            })
         }
         sortByPrice()
     },[])
+    // useEffect(() => {
+    //     setProducts(products);
+    // },[products])
     return (
         <section className="section main">
             <div className="product-image-ad">
