@@ -8,7 +8,7 @@ import About from "./Quy/About";
 import ContactUs from "./Ngọc/Contactus"
 import Footer from "./Tung/Footer";
 import ScrollToTop from "./Duy/ScrollToTop";
-import Detail from "./Khai/Detail";
+import Detail from "./KaiBM/Detail";
 import SignUp from "./Duy/SignUp";
 import SignIn from "./Duy/SignIn";
 import Checkout from "./Duy/Checkout";
