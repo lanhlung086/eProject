@@ -228,11 +228,17 @@ export default function Product() {
                 </div>
                 <div className="productlist detail">
                     {/*<h2 className="title1">Productlist</h2>*/}
-                    <select id="sortby">
-                        <option value="?sort=">Đánh giá cao nhất</option>
-                        <option id="highlow" selected value="?sort=price-high">Giá(cao đến thấp)</option>
-                        <option value="?sort=price-low">Giá(thấp đến cao)</option>
-                    </select>
+                    <div className="sort_by">
+                        <strong>Sort By </strong>
+                        <select id="sortby">
+                            <option value="featured" selected>Featured</option>
+                            <option  id="highlow" value="?sort=price-high">Price
+                                (high to low)
+                            </option>
+                            <option  value="?sort=price-low">Price (low to high)
+                            </option>
+                        </select>
+                    </div>
                     <div className="colum-list">
                         <div className="colum " id="products">
                             {
@@ -240,7 +246,6 @@ export default function Product() {
                                     return (
                                         <ProductList
                                             key={e.id}
-                                            id={e.id}
                                             image={e.imageBig01}
                                             title={e.title}
                                             brand={e.brand}
