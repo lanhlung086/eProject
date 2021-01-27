@@ -4,17 +4,14 @@ import './css/About.css';
 export default function About() {
     return (
         <section className="section main">
-            <img className="anh" src="https://khaihoangroup.vn/wp-content/uploads/2019/07/banner-gioithieu.jpg"/>
+            <h1 className="anh">About Us</h1>
             <div className="group fan">
                 <div className="container">
                     <div className="introduce">
                         <div><br/>
-                            <h1 className="introduce1">
-                                ABOUT US
-                            </h1>
                         </div>
                         <div className="on">
-                            <br/><p className="range"><b><u>About Fan Group:</u></b><br/><br/><b>Fan Group</b> is a
+                            <br/><p className="range"><b><u><h1>About Fan Group:</h1></u></b><br/><br/><b>Fan Group</b> is a
                             private economic group in Vietnam, operating in the main fields: sell fan.</p>
                             <p className="range">Produced from the cradle of a ceiling-closing company, the Vietnam
                                 brand ceiling fan cannot be used worldwide, selected by quality but also by many other
@@ -40,11 +37,12 @@ export default function About() {
                             </div>
                             <br/>
                             <div className="orientation row">
-                                <br/><img className="orientation1 col-md-3"
-                                          src="https://khaihoangroup.vn/wp-content/uploads/2019/07/tam-nhin2.jpg"/>
+                                <br/>
                                 <p className="col-md-9"><u className="orientation2">Orientation</u><br/><b>Fan
                                     Group</b> gradually realizes its goal of becoming a leading corporation in Vietnam
                                     with the desire to create a breakthrough for the domestic and regional economy.</p>
+                                <img className="orientation1 col-md-3"
+                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8w6cCTsdHrpFqlksTvK3dV_Jo4aDDyV8mvQ&usqp=CAU"/>
                                 <br/>
                             </div>
                             <br/>
