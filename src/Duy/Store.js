@@ -1304,26 +1304,29 @@ export const store = [
         },
         price: 350.00,
         listPrice: null,
-        color: "Black",
+        color: "Vintage Gold Leaf",
         brand: "Quorum",
-        dimension: null,
+        dimension: "12 x 6 x 13.5 inches",
         material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        controllerType: null,
+        finishType: "Finished",
         type: "Ceiling Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "Family: chateaux",
+            "Style: traditional",
+            "Category: accessories",
+            "Height: 13.5 length: 12 Width: 6",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Irma",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: " Elegant!",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Installed in our outdoor patio and it looks amazing. Definitely makes a statement vs installing other fans. Love it!",
                 ]
             }
         ]
@@ -1346,26 +1349,30 @@ export const store = [
         },
         price: 102.00,
         listPrice: null,
-        color: "Black",
+        color: "Silver 2551",
         brand: "Lasko",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "13 x 13 x 42.5 inches",
+        material: "Plastic",
+        controllerType: "Electronic controls",
+        finishType: "Matte",
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "BEAT THE HEAT –If you live in the heat with no central air, or your window AC units do a poor job of moving air around your whole house or apartment, this stand up fan creates excellent air flow making you feel cooler. Comes with built-in carry handle, optional oscillation and a handy remote for when you don’t feel like getting up to change the settings.",
+            "VERY QUIET – Powered by 3 speed settings H/M/L, fan creates a powerful breeze, but even on H, you can still hear the TV. If you need white noise to sleep, this fan is perfectly sized to aim over a high bed and creates a soothing purr that drowns out bedroom noises making it easy to fall asleep. Energy efficient timer can be set from 0. 5 to 7. 5 hours.",
+            "FRESHER AIR – The built-in Ionizer disperses millions of negative ions into the air that bond with positively charged ions which includes things like dust, bacteria, pollen, smoke and other allergens. Once the bond is formed, the particles become heavier and fall to the ground. As the negative ion levels grow in the room, the air feels naturally fresher.",
+            "A REAL SPACE SAVER – Standing 42. 5” tall with a small 13” x 13” footprint, the sleek, vertical design optimizes floor space letting you to put the tower fan in places where pedestal & box fans won’t fit, without sacrificing air circulation, comfort or style. Ideal for the dorm, kitchen, living room, RV and home office.",
+            "TRUSTED FOR GENERATIONS – Lasko has been making quality household products for over 100 years. Lasko Wind Curve tower fans are ETL Listed and come with our patented Blue Plug safety fuse technology making them a safe choice for a cooling fresh air breeze when it’s hot and humid outdoors.",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Jacob",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Decked in the face by that sweet sweet breeze",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Let ME tell you about this fan. It's easy, it's breezy and it ain't sleezy. Have you SEEN that woodgrain? Hold me back, I'm gonna get emotional. You're paying $55 here to voucher slip out of a damn heat stroke. The world's on fire, the globe is warming, but you're gonna be smart, right? With this (surprisingly tall) modern work of art you can fight Trump's dismissal of the EPA by setting one of these bad boys up in every city hall in your state. Not a humanitarian? Do what I do, and place it right by your head at night and get absolutely drilled in the face by that cool, angelic wind current. And don't even think about touching it with your hands, you got a REMOTE for that. I don't care if it's an elbows length away, you're gonna feel cooler than ever controlling it with infrared, baby. I gave this a 4 out of 5 in versatility to encourage Alexa integration.",
                 ]
             }
         ]
@@ -1388,26 +1395,40 @@ export const store = [
         },
         price: 59.99,
         listPrice: null,
-        color: "Black",
+        color: "Space Grey",
         brand: "Lasko",
-        dimension: null,
-        material: "Wood",
+        dimension: "14 x 14 x 52.7 inches",
+        material: "Plastic",
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: null,
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "3 Quiet, Energy-Efficient Speeds - makes this fan ideal for the bedroom, living room, kitchen, or home office. The quiet yet powerful fan provides a cooling breeze throughout the room. Small and compact this fan is ideal for tight places where space is minimal",
+            "Widespread Oscillation and Directional Louvers - allows you to direct airflow where you need. Turn on oscillation and the fan will gentle go side to side distributing air. Direct air up or down by using the directional louvers or adjusting the fans height.",
+            "Wireless Remote Control and LED Display - are two great features that make this fan easy to control. The remote allows you adjust the fan speed, timer, oscillation, or sleep mode from a distance. While the fan's LED display lets you know which settings are selected.",
+            "Built-in Timer - automatically shuts the fan off after the selected time. Choose from 1/2 hour to 7.5 hours in 1/2 hour increments. Use the one touch Sleep Mode and the timer is automatically set to run for 6 hours.",
+            "Easy to Follow Instructions - allows you to take the fan out of the box and assemble it in minutes. Simply assemble the base, pedestal, and attach the fan and you're ready to enjoy a cooling breeze.",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Luis Figueroa",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Keep it clean!....with the can of air for electronics.",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Love! This fan six or seven years ago I bought the early model tower fan and Boy did we get use out of it, we would leave it on when we left in the morning for the dog on hot days and use it at nights to help the A/C move the air around, very good fan and it's adjustable to your desired height, second one in seven tough years of use."
+                ]
+            },
+            {
+                name: "TheDeLay",
+                rating: 5,
+                generalReview: "Quiet, Timer functions, Sturdy.",
+                detailedReview: [
+                    "I am very sensitive to heat and need this fan to help me sleep. It has a very low/quiet setting that works well. I do not like it pointed directly at my face, but at a distance of about 3,' it is perfect. It is much quieter than my white noise generator, which I still need even though this is running. Obviously, the higher the settings, the louder it is.",
+                    "I love the sleep timer. It is nice that it will shut off on its own. I do not use the circulate function. It does have lights on the top that are easy to see, but they do not seem too bright at night to me. They might bother others that are sensitive to light in a dark room.",
+                    "It's the right height to cool the top of my bed. It can go some higher, but I don't need it. It does beep when you push any button, which can annoy anyone nearby trying to sleep. I'm happy with it.",
                 ]
             }
         ]
@@ -1428,28 +1449,40 @@ export const store = [
         reviews: function() {
             return this.customers.length;
         },
-        price: 84.99,
-        listPrice: null,
-        color: "Black",
+        price: 77.01,
+        listPrice: 84.99,
+        color: "Silver Black",
         brand: "Lasko",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "8.8 x 11.9 x 35.03 inches",
+        material: "Plastic",
+        controllerType: "Electronic controls",
+        finishType: "Painted",
         type: "Tower Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "25% MORE AIR VELOCITY – This maximum performance high velocity fan combines the sleek streamlined body of a tower fan with the high-powered motor of an air blower resulting in 25% more air velocity than traditional tower fans. If you live where it’s hot, this fan creates excellent air flow to help you beat the heat.",
+            "WHITE NOISE FOR SLEEPING – This fan, powered by 3 powerful speeds, gets louder as the speed setting increases (it is high velocity, after all). But you might find the lowest setting creates just the right amount of white noise for you to get some rest. The lowest setting is also quiet enough to watch TV, yet plenty powerful enough to keep the air moving.",
+            "EASY TO USE – Comes fully assembled. Electronic control features are a breeze to operate. The handy remote control lets you operate the speed, optional oscillation and energy-efficient 7-hr timer without ever having to get up. Easy-grip handle makes it easy to move the fan to wherever relief is needed.",
+            "SPACE SAVING DESIGN – Standing 35” tall with a small 9” x 12” footprint, the sleek, vertical design optimizes floor space letting you to put this stand-up fan in places where large pedestal & box fans won’t fit, without sacrificing air circulation, comfort or style. Ideal for the dorm, bedroom, kitchen, living room, RV and home office.",
+            "TRUSTED FOR GENERATIONS – Lasko has been making quality household products for over 100 years. Lasko fans are ETL Listed and come with our patented Blue Plug safety fuse technology, making them a safe choice for a cooling breeze when it’s hot and humid outdoors.",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Chris Tamez",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Are You Sick Of Being Made Fun Of?",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "If you're looking for a butt-kicking, tornado starting wind monster, you've found it. This beast can roar like a white machine lion, and will clear everything in it's path. One of the best fans, period.",
+                ]
+            },
+            {
+                name: "HSartmama3",
+                rating: 5,
+                generalReview: "So far, so good",
+                detailedReview: [
+                    "I bought two of these, one for a basement and one for a bathroom. These are POWERFUL fans, especially for their size. One potential issue with the design is that they, unlike a typical fan, would be difficult or impossible to clean internally. (To eliminate that issue, I purchased some 3M Filtrete HEPA cloth and cut round \"filters\" to cover each of the intake suctions. When it's time to clean, I'll simply cut new filters to fit. Since each fan is in a location not frequented by guests, the white filters stuck on each side of the base are irrelevant to me. The \"filters\" can be easily removed.) I'll update ratings if necessary.",
                 ]
             }
         ]
@@ -1472,26 +1505,41 @@ export const store = [
         },
         price: 274.00,
         listPrice: null,
-        color: "Black",
+        color: "Blackwood T42905",
         brand: "Lasko",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "13 x 13 x 42 inches",
+        material: "Plastic",
+        controllerType: "App Contro",
+        finishType: "Painted",
         type: "Tower Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "BLUETOOTH ENABLED – Control your tower fan using your smartphone and never worry about losing the fan remote again. Setting up and using the Bluetooth function on your fan is quick and easy. Simply download the Lasko Connect app from the App Store or Google Play to your mobile device and follow the step-by-step instructions.",
+            "BEAT THE HEAT – If you live in the heat with no central air or window AC units do that a poor job of moving air around your whole house or apartment, this high-reaching stand fan with 3 speeds and optional oscillation provides maximum air delivery and full-room coverage to help you beat the heat.",
+            "VERY QUIET – Fan produces a powerful breeze, but even on H, you can still hear the TV. Creates just the right amount of white noise for sleeping so you can get some rest. Easy to assemble and operate. Built-in carry handle makes it easy to move from bedroom to living room. Electric timer option automatically turns the fan off after a period of up to 7 hours of use.",
+            "A REAL SPACE SAVER – Standing 42” tall with a small 13” x 13” footprint, the vertical design optimizes floor space letting you put the fan in places where large pedestal & box fans won’t fit. Sophisticated profile blends seamlessly into your home décor without sacrificing air circulation, comfort or style. Ideal for the dorm, kitchen, home office and RV.",
+            "TRUSTED FOR GENERATIONS – Lasko has been making quality household products for over 100 years. Lasko fans are ETL Listed and come with our patented Blue Plug safety fuse technology, making them a prime choice for a cooling breeze when it’s hot and humid outdoors.",
+            "Included Components: Fan Body, Fan Base",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Donald Trump",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Happy customer",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "This is a nice upgrade from the really cheap stand fans. Looks nice in the living. Old fan was the cheap stand up fan with the cross or x feet and flimsy metal that bends way too easy. This new fan is mostly plastic but thick enough. I like it doesn't take up as much floor space. It stands tall enough but you won't be able to raise it higher if you have a need for that. I don't. I got the bluetooth version. The app works great. All buttons work from the app. Has a sleep mode. The app also allows you to add multiple fans. Nice feature. It it on the quiet side as others have said. This is also convenient for the living room while watching tv. Not the cheapest but definitely not the most expensive. I think the value for the money is spot on."
+                ]
+            },
+            {
+                name: "Anthony",
+                rating: 4,
+                generalReview: "Blows lots of air / Wished it Oscillated a bit more",
+                detailedReview: [
+                    "Wow! Looks nice and it blows a lot of air compared to my previous fan and the taotronics fan. Bluetooth is pretty neat. Only con I had with this is that mine has a rattle. It seems like its a BUILD issue where the frame of the fan, its not properly screwed tightly or glued. If I apply pressure to the top of the fan slightly, the rattle stops. If I let go, it rattles. Funny, I thought about tapping the back of the fan. And to my surprise, it stopped rattling. Once I turn it off for a few hours it'll rattle agin or if I move it. Either I got a defective one or it's like that for all of them. Requested amazon for an advance replacement. Will update review to 4 if the replacement fixes it.",
+                    "Now, I only gave it a 3, a 4 if the rattling stops. For a 5, the last con is that the angle that it oscillates is limited. Imagine your fingers and hand was slammed on and then you tried to make a V with your index and middle finger. Yeah, its like a 30-45 degree angle lol.",
+                    "EDIT: After receiving a relacement, the rattle from the frame is gone! Tested both together and it looks like it's going up to a 4. To add, I wish the oscillating angle was a little more, but other than that, solid fan. Check your fan for a frame rattle on the lowest speed. You can also put a little pressure on the top of the fan to see if the sound changes.",
                 ]
             }
         ]
@@ -1514,26 +1562,47 @@ export const store = [
         },
         price: 69.99,
         listPrice: null,
-        color: "Black",
+        color: null,
         brand: "Honeywell",
-        dimension: null,
-        material: "Wood",
+        dimension: "8.4 x 10.9 x 33.1 inches",
+        material: null,
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: "Painted",
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "DIGITAL TOWER FAN: The Honeywell 3 speed digital tower fan with ionizer exudes the feel of a spring breeze throughout your home; It features a programmable thermostat, 3 speeds, timer shut off function, an electronic LCD display & easy to use controls",
+            "QUIET COOLING: This tower fan's oscillating action allows for greater air distribution, and a remote control with built in flashlight allows convenient control from your favorite spot; A washable air filter helps remove dust",
+            "INCREASE YOUR COMFORT: Using fans for air circulation in your home can help increase your comfort, and help reduce energy costs as well; Honeywell carries a range of tower fans, floor fans, and oscillating fans find one for every room in the house",
+            "HONEYWELL FANS: The right fan helps cool you off & improves airflow in your room or home; Give your air conditioner & wallet a break by using fans to help reduce your energy consumption & costs; Honeywell carries a variety of fans to meet your home needs",
+            "HONEYWELL QUALITY: Help improve air circulation & energy savings in your home, bedroom or office with Honeywell fans."
         ],
         customers: [
             {
-                name: "jesse",
+                name: "kkgrandmarais",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Reliable fan, no ionizer",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "This is my second Fresh Breeze Tower Fan from Honeywell. I purchased the first one nearly 10 years ago, and wanted a second one for another room. I thought that I might as well get this one, which was advertised as the newest model. They are identical in appearance and sound. However, unlike the previous model, this one does not have an ionizer.",
+                    "I still love this fan, plus the new model has a couple improvements over the old: 1) Easier assembly, especially regarding threading the power cord through a particular part of the base to ensure that the fan sits flat. 2) The flashlight on the remote isn't so blinding. 3) There aren't lights on the front of the fan while it is on, which helps keep a dark environment dark.",
+                ]
+            },
+            {
+                name: "Mel's PC Repair And More",
+                rating: 5,
+                generalReview: "Awesome fan!!!",
+                detailedReview: [
+                    "This one fan cooled off our second floor apartment, about 950 sq ft on medium setting when the temp was set to it's lowest setting(60 degrees). One side of the apartment faces the sun for the majority of the day (the hottest part) and this fan kept us at about 70 in 80-85 degree weather."
+                ]
+            },
+            {
+                name: ". Thrane",
+                rating: 5,
+                generalReview: "This is a great fan",
+                detailedReview: [
+                    "Let me start by saying this is the 4th fan of this model that i've purchased over the years. It's reasonably quiet and it oscillates quite far (close to 180 degrees) so it can cover a room. I like the cleanable filter. Fans that I have purchased without a filter get noisy and/or stop working after one summer season. This fan keeps working for several years if you clean the filter when it gets dirty. I've stopped buying other fans... this one is the best!",
                 ]
             }
         ]
@@ -1556,26 +1625,38 @@ export const store = [
         },
         price: 64.99,
         listPrice: null,
-        color: "Black",
+        color: "White",
         brand: "Honeywell",
-        dimension: null,
-        material: "Wood",
+        dimension: "10 x 10 x 32.83 inches",
+        material: null,
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: null,
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "Oscillating remote control tower fan: The Honeywell Quietset tower fan provides powerful whole room cooling with quiet operation, oscillation and automatic shut off timer; 5 levels of sound and power settings let you choose what’s best for your environment",
+            "Quiet cooling: Honeywell's QuietSet line of fans are quiet and powerful, so you'll feel the fan's cooling power with less sound",
+            "Increase your comfort; Using fans for air circulation in your home can help Increase your comfort, and help reduce energy costs as well; Honeywell carries a range of tower fans, floor fans, and oscillating fans find one for every room in the house",
+            "Honeywell fans: The right fan helps cool you off and improves airflow in your room or home; Give your air conditioner and wallet a break by using fans to help reduce your energy consumption and costs; Honeywell carries a variety of fans to meet your home needs",
+            "Honeywell quality: Help improve air circulation and energy savings in your home, bedroom or office with Honeywell fans; 8 speed settings to adjust to your personal sound and cooling power preferences",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Jenos",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Great fan",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "One of the best investments I made this year. The fan is very quite so almost forget it’s on. It comes with a remote and can set a timer per hour to turn off. Highly recommended.",
+                ]
+            },
+            {
+                name: "Bang",
+                rating: 5,
+                generalReview: "Super quiet & powerful",
+                detailedReview: [
+                    "I can't believe how quiet this fan is. I keep it on the \"calm\" setting but it's surprisingly powerful. I live in Texas and i get very hot at night. My bedroom is always uncomfortably warm. I placed it facing the foot of my bed last night and I actually had to get a second blanket! I'm really happy with this purchase."
                 ]
             }
         ]
@@ -1601,23 +1682,36 @@ export const store = [
         color: "Black",
         brand: "Honeywell",
         dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        material: null,
+        controllerType: "Button Control",
+        finishType: "Painted",
         type: "Tower Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "2-in-1 turbo power: Feel the big cooling blast of the turbo force tower fan from 40 feet away. This high-powered fan features 2 independently controlled fans with 6 speeds & 15 different comfort settings.",
+            "Cross flow design: This tower fan combines the high-velocity air output of a tower fan, the versatility of a 90° pivoting top fan & the flexibility of wide area oscillation, into a unique cross-flow design that lets you control your comfort.",
+            "Quiet operation: The aerodynamic fan blades with front air intake provide quiet, powerful whole-room cooling while fitting stylishly into your home’s tight spaces with maximum space saving efficiency",
+            "Improve airflow & save money: The right fan cools you off & improves airflow in your room or home. Give your air conditioner & wallet a break by using fans to reduce your energy consumption & costs.",
+            "Honeywell quality: Help improve air circulation & energy savings in your living room, bedroom or home office with Honeywell's extensive line of table fans, tower fans, oscillating fans, desk fans, window fans & much more.",
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Peter",
+                rating: 2,
+                generalReview: "Not what I expected for the price",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "The fan works decently but is MUCH smaller than expected. There is no base like other tower fans so the bottom fan blows at almost ground level (photo is of the fan next to my old Lasko fan). This is mainly an issue if you plan on using it at night and have a bed that is more than 2.5 feet off the ground (about the size of the lower fan). The biggest problem I have with this item is that Amazon changes the price constantly. I bought the item at $50, it immediately dropped $5 and continued to drop to $35 over a weeks time. They refused to refund me. I went to buy another and after checking out and canceling the item to change my payment method, they immediately changed the price on me to $72. I wouldn’t buy this item unless the price is under $40. Will be returning the first one I bought."
+                ]
+            },
+            {
+                name: "MJ",
+                rating: 5,
+                generalReview: "Great multi function fan",
+                detailedReview: [
+                    "This is a great air-mover and helps keep my top floor bedroom cool in these 95+ degree heat. For the price it should have come with a remote control. So I added a smart-plug to mine and added it to Alexa so even while in bed I can tell Alexa to turn it on and off.",
+                    "I like the directional fan on top and use it to move air up toward the ceiling while the vertical part moves a ton of air and keeps my bedroom cool, even on the hottest days when the AC can’t keep up."
                 ]
             }
         ]
@@ -1642,24 +1736,37 @@ export const store = [
         listPrice: null,
         color: "Black",
         brand: "Honeywell",
-        dimension: null,
-        material: "Wood",
+        dimension: "10 x 8 x 32 inches",
+        material: "Plastic",
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: null,
         type: "Tower Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "8 speed tower fan: The Honeywell 8 speed tower fan exudes the feel of a spring breeze throughout your home; featuring quiet set technology that allows users to control their sound and cooling options, making it the perfect year round fan for any home",
+            "Quiet cooling: The slim, modern design of this quiet & powerful fan features oscillating motion for whole room cooling; It features 8 speed touch button controls and comes with a remote control that nests in the back of the fan housing for easy storage",
+            "Increase your comfort: Using fans for air circulation in your home can help Increase your comfort, and help reduce energy costs as well; Honeywell carries a range of tower fans, floor fans, and oscillating fans find one for every room in the house",
+            "Honeywell fans: The right fan helps cool you off & improves airflow in your room or home; Give your air conditioner & wallet a break by using fans to help reduce your energy consumption & costs; Honeywell carries a variety of fans to meet your home needs",
+            "Honeywell quality: Help improve air circulation & energy savings in your home, bedroom or office with Honeywell fans;Fused safety plug",
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Drogba",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "A Solid Fan, Not an AC Unit",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "To begin with, no fan is a substitute of an AC system, those that use one need to understand thermodynamics, AC units remove the heat from the room and have super-cooling methods that wouldn't be used in a fan. To get air OUT of a room, you need an exit, an open door, window, etc.",
+                    "I use mine in support of our AC unit, which is all the way in the living room (and struggles to reach my room). Fans are mainly intended to keep the air circulating, but by doing so also slightly (but noticeably in enclosed environments, far more than in open) increase the temperature as a byproduct. However, fans do make it more bearable, and make a significant difference when centered onto the person in question."
+                ]
+            },
+            {
+                name: "Lukaku",
+                rating: 1,
+                generalReview: "Worked for a month now can’t use higher than second setting!!",
+                detailedReview: [
+                    "I liked this fan when first using it but now i hate it! It was not worth the money or hassle I went through getting it..... bought and received the first part of February and started using it mid April worked fine for first month Of occasional use but now I can’t use any higher than second setting or it makes a horrible loud noise!!! Ridiculous I bought it to replace a fan I had been using for almost 5 1/2 years running almost non stop that entire time! Yet this more expensive newer fan didn’t last a month! Like I said RIDICULOUS!!!"
                 ]
             }
         ]
@@ -1680,28 +1787,42 @@ export const store = [
         reviews: function() {
             return this.customers.length;
         },
-        price: 109.99,
-        listPrice: null,
+        price: 91.54,
+        listPrice: 109.99,
         color: "Black",
         brand: "Vornado",
-        dimension: null,
-        material: "Wood",
+        dimension: "12 x 12 x 36.8 inches",
+        material: "Plastic",
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: null,
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "CIRCULATE OR OSCILLATE – Dual airflow settings for either optional oscillation or V-Flow whole room air circulation",
+            "MOVES AIR FURTHER – Powerful motor produces higher volume of air movement and pushes air up to 75 feet",
+            "SMOOTH OSCILLATION – Designed for smooth, quiet oscillation while the chromed arch with carrying handle provides style and portability",
+            "ADVANCED CONTROLS – Touch-sensitive controls, 4 speed settings, energy-saving 2-8 hour timer and remote control",
+            "SUPERIOR SUPPORT — When you choose a Vornado Tower Fan, you’re investing in superior performance and design that will deliver total satisfaction. If not, we’ll replace it, for 5 years.",
+            "Built to meet U. S. voltage requirements. Certified, safety-tested, and warrantied for use only in the U. S."
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Xavi",
+                rating: 4,
+                generalReview: "Good air flow, remote sucks, pretty quiet at highest speed",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "For a fan this size, it has a very good air flow. Even with the fan speed set to 1, a nice wind was felt ~10 ft away. At fan speed 4, it is not loud, but it does have a hum near the 3kHz and 4kHz range. It is noticeable but not to point where it's painful.",
+                    "The circulatory claims does seem to be true. The fan was set to oscillate and then stationary, surprisingly the stationary (circulation) actually felt cooler."
+                ]
+            },
+            {
+                name: "Lingard",
+                rating: 5,
+                generalReview: "Real Review in list form with more emotion then descriptive detail. Enjoy",
+                detailedReview: [
+                    "This is a great fan. I did have an electrician install it as it was going over my so-called island. I did have another person put the fan together but unfortunately when the electrician tried to install it would not work and he could not take the fan light off to see what was the issue. The motor would start up ok then it would freeze. So I took the fan to an authorized dealer to see if they could get the light off but even they could not. So I returned it and bought the exact same fan again and the new replacement which was put together by the electrician worked like a charm with no issues. I like the fan because it does not move my recipe papers or recipe book pages. The light is also very good and bright. I would definitely recommend this product."
                 ]
             }
         ]
@@ -1722,28 +1843,40 @@ export const store = [
         reviews: function() {
             return this.customers.length;
         },
-        price: 99.99,
-        listPrice: null,
+        price: 69.99,
+        listPrice: 99.99,
         color: "Black",
         brand: "Vornado",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "11 x 11 x 32.3 inches",
+        material: null,
+        controllerType: "Touchpad Control",
+        finishType: null,
         type: "Tower Fan",
         bestSeller: true,
         sale: false,
         new: false,
         aboutItem: [
-
+            "CONTINUAL AIRFLOW – Utilizes Vornado's signature Versa-Flow Technology to provide complete circulation of all the air in a room. Unique crosscut outlet create a wide span of constant airflow, eliminating the need for a wobbly oscillating base.",
+            "MOVES AIR FURTHER – Powerful motor produces higher volume of air movement and pushes air up to 85 feet.",
+            "ENERGY SAVING TIMER – 1-8 hour auto-off timer ensures you run your tower circulator in an efficient, energy-saving way.",
+            "SIMPLE CONTROLS – Touch-sensitive controls allow you to select from 5 speed settings, and a remote control provides additional convenience.",
+            "SUPERIOR SUPPORT — When you choose a Vornado Tower Fan, you’re investing in superior performance and design that will deliver total satisfaction. If not, we’ll replace it, for 5 years. Supported by a customer service team based in Andover, KS."
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Inesta",
+                rating: 4,
+                generalReview: "RattleRattleRattle*TAPE*.....silence....",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Not an awful lot to say here - it puts out a REALLY good amount of air and does so in an elegant package, as you'd expect for a premium fan at this price point. While I was almost ready to live with the rattle, cause returning stuff isn't my idea of a good time, the simple application of a strip of painters tape on the back completely cured it."
+                ]
+            },
+            {
+                name: "Thiago",
+                rating: 3,
+                generalReview: "No joy. Continue to rattle",
+                detailedReview: [
+                    "I bought these fans last year as a way to save space and they really do push air. I've bought several of the 42in and the smaller 33in. The problem is that after they have been in use for some time they start getting really noisy. This seems to be due to the inner cylinder spinning off balance and causing rattling, vibration, and whine. At first I thought it was due to dust build on on the internal cylinder, but then I tried cleaning it by blowing it out with an air compressor, being sure not to spin the blade at high RPMs. No joy. Continues to rattle, vibrate, buzz, and whine. ALL of the units (and I have 3 42in and 1 33in have this issue. Due to this, I would not recommend unless you use it for light use."
                 ]
             }
         ]
@@ -1764,28 +1897,42 @@ export const store = [
         reviews: function() {
             return this.customers.length;
         },
-        price: 79.99,
+        price: 68.00,
         listPrice: 109.99,
         color: "Black",
         brand: "Vornado",
-        dimension: null,
-        material: "Wood",
+        dimension: "10.47 x 10.47 x 36.53 inches",
+        material: null,
         controllerType: "Remote Control",
-        finishType: "Brushed",
+        finishType: "Black",
         type: "Tower Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "CONTINUAL AIRFLOW – Utilizes Vornado's signature V-Flow Technology to provide complete circulation of all the air in a room. Unique crosscut outlet create a wide span of constant airflow, eliminating the need for a wobbly oscillating base.",
+            "MOVES AIR FURTHER – Powerful motor produces higher volume of air movement and pushes air up to 70 feet.",
+            "ENERGY SAVING TIMER – Choose from 1, 2, 4, or 8 hour timer to ensure you run your tower circulator in an efficient, energy-saving way.",
+            "SIMPLE CONTROLS – Push-button controls allow you to select from 3 speed settings, and a remote control that magnetically cradles at the top of the unit provides additional convenience.",
+            "SUPERIOR SUPPORT — When you choose a Vornado Tower Fan, you’re investing in superior performance and design that will deliver total satisfaction. If not, we’ll replace it, for 5 years.",
+            "Built to meet U. S. voltage requirements. Certified, safety-tested, and warrantied for use only in the U. S."
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Vidic",
+                rating: 4,
+                generalReview: "Don't expect to be blown away by this fan -UPDATED-",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Bought this hoping to have a nice fan to cool the room. Based on previous Vornado products I have had in the past i was expecting more and a bit disappointed with what it is. The description and history of these products I was expecting this thing to more air like no other. I expected that the lowest setting would be more than enough for my bedroom based on description saying this unit would push air 70' away.",
+                    "I am maybe 10' away and i can barely feel the air. This is not the Vornado products of old. I have it on highest setting and it is not what i was expecting. The whole design of the curved vent to distribute the air a more of 180 degree is both a benefit and curse. It is great for the middle of the room but when you need it to hit a specific spot you are getting just a small portion of that 180 degree hitting it while the rest is dispersed everywhere else."
+                ]
+            },
+            {
+                name: "Greengood",
+                rating: 5,
+                generalReview: "Works great!",
+                detailedReview: [
+                    "I bought this fan as my previous similar fan had broken. The reason I love this fan as it does not move so it limits the chances of breaking near the motor of the other fan. It offers great circulation and it was much needed during the hot summer months with no air conditioning. I also like the remote so I keep it near my bed. Note I live in a studio apartment; I'm not sure how it would work in a larger house but for me, it worked for a 503 square foot apartment. It does get a bit loud on the high setting for when I was trying to watch TV or a movie so I would just change it to a lower setting. Lastly, I am constantly running this fan every night and have not run into any issues."
                 ]
             }
         ]
@@ -1810,24 +1957,39 @@ export const store = [
         listPrice: null,
         color: "Black",
         brand: "Vornado",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "5.4 x 5.3 x 14.5 inches",
+        material: null,
+        controllerType: "Button Control",
+        finishType: "Painted",
         type: "Tower Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "CONTINUAL AIRFLOW – Utilizes Vornado's signature Versa-Flow Technology to provide complete circulation of all the air in a small room Unique crosscut outlet create a wide span of constant airflow eliminating the need for a wobbly oscillating base",
+            "DUAL VERSATILITY — Easily switch airflow direction from a small-footprint vertical tower position to a low-profile horizontal position",
+            "MOVES AIR FURTHER – Powerful motor produces higher volume of air movement and pushes air up to 50 feet",
+            "SIMPLE CONTROLS — 4 speed settings can easily be adjusted through the push of one button",
+            "COMPACT AND QUIET — At 14 5\" tall and 5\" wide Duo is perfect for a breeze in tight quarters Enjoy quiet air comfort that won’t disrupt your surroundings",
+            "SUPERIOR SUPPORT — When you choose a Vornado Tower Fan you’re investing in superior performance and design that will deliver total satisfaction If not we’ll replace it for 5 years",
+            "Built to meet U S voltage requirements Certified safety-tested and warrantied for use only in the U S"
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Lampard",
+                rating: 4,
+                generalReview: " Good for a tight spot, but rattles after a few months.",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "I have several different Vornado fans throughout the house. Most are conventional fans. They move a lot of air relative to the noise they make, which is why I am willing to pay a more for a Vornado over other brands. This is the only tower fan that I own at the moment. I've had it for over a year now and it runs continuously most of the time.",
+                    "I like the compact design. it fits in a tight spot between my desk and the doorway to our office. We have a fair amount of computer equipment and this little fan does a good job of discretely circulating air from the hallway into the room. It's quiet on its lowest setting and tolerable on the next setting up. The two higher speeds make the squirrel cage blower whine loudly enough that I never use those speeds. Overall it's noisy for what I'd expect from a Vornado. I know tower fans are generally this way, but I was hoping for better."
+                ]
+            },
+            {
+                name: "Frank",
+                rating: 2,
+                generalReview: "Could use more angles.",
+                detailedReview: [
+                    "Where most devices with this \"tube and holster\" design let you swivel things almost 360 degrees, it was a disappointment to find that you get barely 45 degrees of motion, meaning that you shouldn't be surprised if you need to float another little tchotchke under it from around the house in order to get the angle you wanted. However, we haven't had any of the durability or noise problems others complained about. The mode-cycling power button is sleek, simple, and gives a little dash of modernity to what would otherwise be a very plain fan, and while it doesn't shoot a very wide cone of air, what it blows is very strong - once the fan was well-targeted, I was getting chilly in the middle of summer. That's what we're looking for here!"
                 ]
             }
         ]
@@ -1852,24 +2014,36 @@ export const store = [
         listPrice: null,
         color: "Black",
         brand: "O2COOL",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "3.78 x 2.83 x 10.47 inches",
+        material: "Plastic",
+        controllerType: "Button Control",
+        finishType: null,
         type: "Misting Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "COMFORTABLE COOLING MIST: Beat the heat with a personal cooling system. This portable mini misting fan from O2COOL offers a fine mist of cold water and a powerful fan",
+            "POWERFUL ONE-SPEED MOTOR: With the help of the powerful motor and flexible fan blades you can get a cool breeze anywhere! Its battery operated, requires 2 AA batteries (not included)",
+            "PERFECT FOR OUTDOOR OUTINGS: Using the deluxe misting fan is the perfect way to cool your face at the beach, park, at a game, camping or at theme parks. Can be used indoors or outdoors",
+            "PORTABLE & HANDHELD: This battery operated fan is perfect for travel and it’s a great way for kids to get some chill. It’s compact and lightweight so you can easily throw it in your tote bag or luggage",
+            "COLORFUL DESIGNS FOR EVERYONE: All of our fans and bottles are stylish, colorful and bright"
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Chicharito",
+                rating: 4,
+                generalReview: "Great for mamas in labor-but bring extra batteries",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "I purchased this to use while I was in labor with baby #2. It was amazing when I was having a slight panic attack, if you’re the type of person to need absolute COLD when you’re stressed/nervous this is a great product. However I removed a star because it died right when I needed it most! It started to sputter and I was able to give it a good smack and it turned back on, but about 10 minutes before push time the battery died!! I was NOT happy, my husband says my face was absolute rage. Buuut I had been using it off and on all day, and for a long stretch of time when it died. Didn’t feel like very long to me, time was flying but I’m pretty sure it wasn’t the fans fault! Just ran out the battery! All in all I would recommend this fan, just be sure to bring extra batteries if you’re planning on using it for very long!"
+                ]
+            },
+            {
+                name: "Emma Stone",
+                rating: 5,
+                generalReview: "Pretty nice",
+                detailedReview: [
+                    "We bought this fan for a trip to Orlando (Disney) and it held up great! We didn't have to replace the batteries at all during our stay there (one week). The \"blades\" are made out of silicone or something similar. They're pretty soft. When the fan is on they can hurt little baby fingers though - not cut or puncture the fingers, but just like a \"zap\". The cool mist that comes out is awesome for 90+ degree weather."
                 ]
             }
         ]
@@ -1892,26 +2066,39 @@ export const store = [
         },
         price: 230.00,
         listPrice: null,
-        color: "Black",
+        color: "7050",
         brand: "Lasko",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "16.25 x 12.3 x 14.85 inches",
+        material: "Plastic",
+        controllerType: "Manual Control",
+        finishType: null,
         type: "Misting Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "Reduces air temperature up to 25 degrees",
+            "Ideal for picnics, decks, patios, sorts and DIY projects",
+            "90 Degree pivot directs mist flow",
+            "Automatic louvers create wide sweep",
+            "Three refreshing speeds",
+            "finish types: Black"
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Emma Watson",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Good but does put out a lot of water",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "This machine really is wonderful. I live in Arizona and is very dry and hot so having the misting fan is super helpful, it truly does lower the temperature by about 30° if you’re in the direct spray. If you’re standing too close, you will get wet, obviously it’s spraying water. I use this in my aviary to keep my birds cool and they love it. I really do wish there was a way to control the flow of water though, make the mist finer or Be able to control how many nozzles are missing water at a time, currently it’s just on or off no ability to control the volume of water coming through it, if you try to turn the hose down It’s simply stoppes mistng and starts dripping. I let this run constantly and for the heat of the day, 6 to 8 hours. In the evening everything in there is pretty drenched. I don’t need as much water as air movement, so adjustable sprays would be super helpful, But otherwise, really fantastic."
+                ]
+            },
+            {
+                name: "Rooney",
+                rating: 5,
+                generalReview: "Happy with this purchase!",
+                detailedReview: [
+                    " So far, so good. The Lasko Misting Fan works well. I could definitely feel the difference when the unit is running, opposed to when it is not. I loaded pictures of the temperature difference, within the first 10 minutes of use. I tried adjusting the water pressure to decrease the amount of moisture that was left on the deck. I moved it back as well, but it still seemed to saturate things in spite of. I’ll keep working on it and will update this review if I find a way to resolve it. Overall, I’m happy with the purchase."
                 ]
             }
         ]
@@ -1934,26 +2121,39 @@ export const store = [
         },
         price: 18.26,
         listPrice: 21.49,
-        color: "Black",
+        color: "Raspberry",
         brand: "O2COOL",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "3 x 3 x 10.5 inches",
+        material: "Plastic",
+        controllerType: null,
+        finishType: null,
         type: "Misting Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "COMFORTABLE COOLING MIST: Beat the heat with a personal cooling system. This portable mini misting fan from O2COOL offers a fine mist of cold water and a powerful fan",
+            "POWERFUL ONE-SPEED MOTOR: With the help of the powerful motor and flexible fan blades you can get a cool breeze anywhere! Its battery operated, requires 2 AA batteries (not included)",
+            "PERFECT FOR OUTDOOR ACTIVITIES: Give yourself a refresh anywhere! It’s the perfect way to cool your face at the beach, park, at a game, camping or at theme parks. Perfect for use indoors or outdoors",
+            "PORTABLE & HANDHELD: This battery operated fan is perfect for travel and it’s a great way for kids to get some chill. It’s compact and lightweight so you can easily throw it in your tote bag or luggage",
+            "COLORFUL DESIGNS FOR EVERYONE: All of our fans and bottles are stylish, colorful and bright! This offer is a 2 PACK. You will receive 2 Raspberry Deluxe Misting Fans."
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Keanu",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "So good",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "We live in Florida and have 2 young kids, we go to theme park every other weekend. We need this. It doesn’t hurt kids finger even they stick fingers in. Little bit hard to spray for 2 year old, but 3 year old master it.",
+                    "Only drawback is if blade is in front of sprayer and not turn on to spray, water blocks it. Sounds obvious but sometime it gets annoying."
+                ]
+            },
+            {
+                name: "Reeves",
+                rating: 4,
+                generalReview: "Hot weathers must item",
+                detailedReview: [
+                    "Of the 2, one works well. The other...well it depends on how you hold it if any water comes out. Ended up being more hassle trying to get it to work than it was worth."
                 ]
             }
         ]
@@ -1978,24 +2178,37 @@ export const store = [
         listPrice: 25.99,
         color: "Black",
         brand: "HandFan",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "4.33 x 1.96 x 9.84 inches",
+        material: "Plastic",
+        controllerType: "Button Control",
+        finishType: null,
         type: "Misting Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "【Cooling Fan with Humidifier】: The misting fan with a 55ML large capacity water tank to offer water spray, it can last spraying for about 40 minutes after a full water-filling, just hold the power button for 2 seconds to Activate or Inactivate the mist mode. It can help to keep your face or skin moist at office, home or outdoor, cool you down faster in hot days and refresh you from the tiredness",
+            "【Long Working Time】: The battery operated fan with a 2000mAh bulit-in rechargeable battery, which can support to work 9 hours after a fully charge. It's pretty convenient to charge the fan when run out of power, connect with 5V output adapter, USB cable, laptop, power bank or any other USB-enable devices to charge, no worry about power off for outdoor activities",
+            "【Multipurpose Fan】: This portable fan could work as a desktop fan with it's 180°foldable handle design,a clip on fan with enclosed metal bracket,a cooling humidifier with large water tank,a handheld fan with it's ergonomical handle. It's a necessity in hot summer for travel, hiking, shopping, watching sport games, disney land, and more.",
+            "【Strong Wind + 3 Speeds】: This handheld fan has a unique design with 3 small+3 large fan blades, which helps the fan to generate a stronger airflow(5m/s) but with lower noise at the same time,you can feel the cool breeze from 3 meters away. You can just press the power button repeatedly to change the speed from Low, Middle to High level.",
+            "【High Quality & Durable】：This personal fan was built with a durable brushless motor insdie, which able to provide 15,000 hours lifespan and it's 7 times longer than most of other mini fan. NOTE: The voltage should not exceed 9V when charging, or it will not get charged."
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Chris",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Mister works fine if you turn it on properly",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "This is an awesome fan. I have had several portable fans like this one and this is definitely the best. I've seen several reviews that say that the mister does not work which is what I thought was the case with mine but it turn out that you need to hold the button for about 4-5 seconds to turn it on and off. It's definitely the strongest fan I've seen of this type and the ability to adjust the angle with the movable handle with clip is a big plus."
+                ]
+            },
+            {
+                name: "Thor",
+                rating: 5,
+                generalReview: "Love my fan! If you have a problem: contact the seller!",
+                detailedReview: [
+                    "Unfortunately, when I received the original fan, it arrived broken and would not charge. This meant that once that battery died, it would have been useless. I decided to bypass Amazon and just contact the seller directly. I emailed them on a Friday afternoon and they got back to me the following Tuesday. They apologized for the problem and said they were sending me a replacement fan right away, and said that I didn't need to worry about sending back the defective one. I received my new fan the following Monday and it works exactly as advertised.",
+                    "The fan is perfect for my needs, I just needed something that could sit on the patio table next to me and would help on hot/sunny days and to cool down after a run. Based on the other reviews here's my takeaway..."
                 ]
             }
         ]
@@ -2018,26 +2231,40 @@ export const store = [
         },
         price: 59.99,
         listPrice: 111.35,
-        color: "Black",
+        color: "White",
         brand: "Broan-NuTone",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "8.25 x 7 x 8.25 inches",
+        material: "Polymeric",
+        controllerType: "Button Control",
+        finishType: null,
         type: "Exhaust Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "VERSATILE FAN: Exhaust fan helps eliminate humidity, tobacco smoke, and cooking odors. The galvanized steel house installs easily between ceiling joists for use wherever you need it most",
+            "EFFICIENT: Operates on 200 CFM and 8.5 Sones to ensure high-quality performance",
+            "EASY INSTALLATION: Includes steel mounting brackets with keyhole slots for a fast and easy installation",
+            "DECORATIVE: Paintable polymeric grilles allow you to ensure the fan is cohesive with your existing decor",
+            "SAFE: This 8\" fan is ENERGY STAR certified and HVI certified to ensure safe use for years to come"
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Ramos",
+                rating: 4,
+                generalReview: "This fan really sucks (in a good way)",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "I bought this fan because I needed a fan that was fairly noisy because my wife likes some background noise and often left our previous bathroom fan on. Little did I know what I was getting into. The following is all true.",
+                    "It started with the inaugural starting of the fan. Wow, it was fairly loud. Definitely what the package said, I guess I just didn't know what 6.5 Sones sounds like. Imagine vacuum cleaner like noise. Oh well, it at least seemed to be working really well, you could really feel airflow in the bathroom, it was like air was being sucked out of the heating vent. It actually created a kind of pleasant breeze. After being in the attic for an hour on a hot day it was pretty wonderful.",
+                    "Then I went to take a shower. I instantly knew something was wrong, the door wouldn't close. Something must be stuck in it, I checked everywhere but nope. Then it dawned on me, the fan was drawing so much air that the door was having trouble closing against the wall of air the fan was sucking into the room. \"Small price to pay for a good fan\" I naïvely thought as I switched off the fan and closed the bathroom door. I turned on the fan once more and started getting ready for my shower when I heard a loud bang. I glanced at the fan, no everything was good with it. Then I saw it, my heavy metal heater vent had been the only way for air to come in and the fan had heartlessly ripped it out of the wall so it could consume more valuable air."
+                ]
+            },
+            {
+                name: "Dominic",
+                rating: 5,
+                generalReview: "Mobile home approved",
+                detailedReview: [
+                    "I live in a 24 year old mobile home. And as you out there in my position know it is HARD to find mobile home parts. So when our 20 + something fan broke for the guest bathroom we were shocked to find that Home Depot and lowes both didn't have one that would work in our home. We have a vent that shoots straight up (vertical) into the roof. And most vents now have a left or right (horizontal) curvature to the vent. So when we found this one we were thrilled it was the right kind. One that just shoots straight up. Now the fan is a little louder than we hoped for however after careful consideration we are glad it is. Have you ever been to a house where the guest bathroom is so close to the main family room you don't feel comfortable, thinking someone can hear you using the restroom?? Well problem solved. This fan is just the right amount of loud so you don't hear a thing. And our house HAS a bathroom right off of the living room---to close for comfort. So in my opinion this fan is perfect. The outside of it is beige/cream not white. And the base is pretty wide at 8inches. But fits perfectly. Again, it is loud but I'm sure my guests appreciate the loud \"cover\" for them to do what they have to do and not be embarrassed. I have had several get togethers and almost everyone has used the fan to mask their private affairs. Glad I got it. Hope this helped. I have inserted a photo of installed fan, hopefully it comes through alright."
                 ]
             }
         ]
@@ -2060,26 +2287,38 @@ export const store = [
         },
         price: 129.00,
         listPrice: null,
-        color: "Black",
+        color: "White",
         brand: "Broan-NuTone",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "12.25 x 12.25 x 5.75 inches",
+        material: "Plastic",
+        controllerType: null,
+        finishType: null,
         type: "Exhaust Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "HIGH-QUALITY FAN: Quiet, energy efficient exhaust fan operates with 110 CFM and 1.0 Sones to help control air quality is powerful enough for rooms (including bathroom) up to 105 sq. ft.",
+            "EFFICIENT: Powerful ventilation removes moisture and reduces the risk of mold or mildew in most full baths at 110 CFM, so your surroundings will always be comfortable",
+            "EASY INSTALLATION: Easy to install new/replace existing product with retrofit installations that can be done entirely from the room-side – no attic access required",
+            "RELIABLE PERFORMANCE: With our TrueSeal Damper Technology, fans reduce air leakage by up to 50% compared to competitive models, resulting in better home performance via blower door tests and reducing cold and warm air backdrafts",
+            "THREE YEAR LIMITED WARRANTY: Backed by a three year limited warranty for your convenience"
         ],
         customers: [
             {
-                name: "jesse",
+                name: "Sanchez",
                 rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                generalReview: "Good fan for a good price, relatively easy install",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "I installed this fan as a retro-fit. Overall, it was an easy process (much easier than getting the old one out). Could have been a bit easier. There are a few steps that seem a little counter intuitive. One thing that I did notice is that a lot of other reviews talk about have trouble attaching the cover. I don't know if they changed something since then, but the cover to my fan went on in literally ten seconds. No trouble in the slightest. The fan works very well, and the light is very bright (seriously, almost hurts to look at). It is also remarkably quiet (though my other fan was pretty loud so that might just be me. We are very happy with it."
+                ]
+            },
+            {
+                name: "Pedro",
+                rating: 5,
+                generalReview: "Stylish and quiet fan",
+                detailedReview: [
+                    "I like everything about this fan. First of all it looks so stylish and sleek. Second, the light is not dim at all. My first photo shows what it looks like with only the fan light on, and my second photo shows what it looks like with the fan light off and both my vanity lights on. My lights are on the right, which left my shower in the dark. With this fan I now have plenty of light by the shower. It is also very quiet and works really great. Extremely satisfied! It would probably be nice to have the option of having the light on or off while the fan is on, but not a real issue."
                 ]
             }
         ]
@@ -2102,26 +2341,38 @@ export const store = [
         },
         price: 200.00,
         listPrice: 249.99,
-        color: "Black",
+        color: "Sliver",
         brand: "Iliving",
-        dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        dimension: "23 x 5.75 x 23 inches",
+        material: "Aluminum",
+        controllerType: "Button Control",
+        finishType: null,
         type: "Exhaust Fan",
         bestSeller: false,
         sale: true,
         new: false,
         aboutItem: [
-
+            "CUT COOLING COSTS: Reduce expensive cooling bills at home. Ready to install, our wall-mounted automatic shutter vent fan is designed to help keep your living space cooler and more comfortable year-round.",
+            "MULTIPURPOSE: Perfect cooling and ventilation solution for any space at your home - including the attic, garage, shed, and more.Corrosion-resistant, the fully enclosed motor is thermally protected and permanently lubricated for easy maintenance.",
+            "VARIABLE SPEED: Customize your comfort. iLiving Exhaust Fan has adjustable speed functionality when combined with the iLIVINGILG8SFSC speed controller (sold separately).",
+            "WEATHER RESISTANT SHUTTERS: Constructed from durable, high-grade aluminum, these shutters can withstand moisture and heat longer than other competitors’ products adding to the fan’s longevity.",
+            "POWERFUL AND EFFICIENT: Small but mighty, you’ll enjoy the power and efficiency of iLiving’s Shutter Exhaust Fan. The 20-inch runs onstandard 120 volts at 1/4 HP, 2.59 amps with 1075 rotations per minute, cooling and ventilating an area of 3368 cubic feet per minute!"
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Samson",
+                rating: 1,
+                generalReview: "Not happy",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "I'm slagging this item because it was promoted as \"variable speed.\" I bought it along with the ILG8SFSC speed control, which created an unacceptably loud hum in the motor and caused intense vibration in the fan across the entire range of variability. The fan by itself operates as expected without excessive noise, but now I'm stuck with a single-speed fan that I could have bought a lot cheaper. If you need variable speed buy a fan with 3-speed motor made in the USA. I'd be happy to have spent an extra $100 on something more suitable"
+                ]
+            },
+            {
+                name: "Drogo",
+                rating: 5,
+                generalReview: "If You Have a Metal Shop .. This is a Must Have",
+                detailedReview: [
+                    "Works great. Put it on a thermostat. Very quiet and cools excellent. Actually bought a second one to add to the shop. Dropped the ceiling temperature from about 130° (building is uninsulated ... big mistake) to about 105°F. This makes a tremendous difference in the shop. Can't wait to see what the second fan will do. But, the ad is a little misleading if you don't read closely. The fan does NOT come with a cord or thermostat. I did recommend one to my brother and he thought the same thing ... that it comes with a cord and thermostat. Not sure if he ever believed me or not when I told him it doesn't."
                 ]
             }
         ]
@@ -2147,23 +2398,43 @@ export const store = [
         color: "Black",
         brand: "HG Power",
         dimension: null,
-        material: "Wood",
-        controllerType: "Remote Control",
-        finishType: "Brushed",
+        material: null,
+        controllerType: null,
+        finishType: null,
         type: "Exhaust Fan",
         bestSeller: false,
         sale: false,
         new: true,
         aboutItem: [
-
+            "EFFICIENT VENTILATION - Equipped with efficient double ball bearing motors, thickened paint impellers & blades. HG POWER Ventilation Fan Vent Blower can eliminate excess moisture, remove exhaust gas, eliminate odors and ventilation with quickly and quiet way. It is an ideal choice for creating efficient indoor HVAC system among workshops, basements, warehouses, apartment, kitchen, bathroom and other areas that require continuous or regular ventilation",
+            "SUPER MOTOR - Adopts double ball bearing outer rotor brushless motor to ensure high efficient, quiet operation and high-quality performance. Compared with ordinary motors, the upgraded motor can reduce friction coefficient, save electricity effectively and enlarge the service life of the machine",
+            "HIGH AIR FLOW EXHAUST FAN - Diameter: 150mm/ 6 inch; Air Flow: 308 CFM, Power: 38W, Voltage: 110VAC, Frequency: 60Hz, Current: 0.16A, Speed: 2800r/ min",
+            "DURABLE BAKING VARNISH COMPONENTS - The fan shell and impeller are made of durable baking varnish material. Thickened protective dense mesh design can both prevent fragment from being involved to the motor blades, and also prevent accidental touch injury",
+            "EASY TO INSTALL- Suitable for wall or ceiling installation. It's recommended to fix with glue or screws. This wall ceiling ventilation fan can be widely used in bathrooms, living rooms, bedrooms, kitchens, offices and other areas that require continuous or regular ventilation. Convenient to clean, you can remove the motor by unscrewing the four-corner screws. The detachable design is convenient for cleaning up fragment or greasy dirt regularly for increasing service life"
         ],
         customers: [
             {
-                name: "jesse",
-                rating: 5,
-                generalReview: "Lots of air on low speeds. Looks good in home",
+                name: "Alonso",
+                rating: 4,
+                generalReview: "Appears solid.",
                 detailedReview: [
-                    "Easy to mount even easier to use. The 3 slim blades take a minute to get use to but this is a great fan. Provides a lot of air on the lower speeds. Looks great in our home. Have 4 of these so far will definitely buy more.",
+                    "Fan seems to be okay damper is a little too loose doesn't close all the way and fan was missing screws and nuts if damper was better and not missing parts would have been a five-star very sad e-mailed and ask if they could send me missing hardware with no reply."
+                ]
+            },
+            {
+                name: "Robben",
+                rating: 5,
+                generalReview: "Good air flow.",
+                detailedReview: [
+                    "Like the volume of air it moves."
+                ]
+            },
+            {
+                name: "Pepe",
+                rating: 5,
+                generalReview: "Very powerful",
+                detailedReview: [
+                    "I installed this product above our dryer to get rid of some of the hot air in the closet,installed in ceiling to blow in attic,i wished it had more cfm but it has helped"
                 ]
             }
         ]
