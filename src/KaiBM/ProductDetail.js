@@ -63,7 +63,8 @@ function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, l
                             </div>
                         </div>
                     </div>
-                    <p><Link to="#" style={{textDecoration: 'none'}}><strong>Another</strong></Link></p>
+                    <button className="main__itemAddToCart1">Add to Cart</button>
+                    <p><Link to="#" style={{textDecoration: 'none'}}><strong></strong></Link></p>
                     <div className="line"/>
                     <table style={{maxWidth: '100%', lineHeight: 2.0}} id="table_information">
                         <tbody>

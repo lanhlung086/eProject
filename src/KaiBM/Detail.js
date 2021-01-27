@@ -82,7 +82,7 @@ function Detail({id}) {
                         />
                     </div>
                     <div className="main-body-ads">
-                        <img className="imgProduct_ads" src="imgs/ads_img.jpeg" style={{width: '100%'}}/>
+                        <img className="imgProduct_ads" src="imgs/add.png" style={{width: '100%'}}/>
                     </div>
                 </div>
                 <div className="line"/>
