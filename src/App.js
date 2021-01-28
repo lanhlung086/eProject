@@ -12,6 +12,7 @@ import Detail from "./KaiBM/Detail";
 import SignUp from "./Duy/SignUp";
 import SignIn from "./Duy/SignIn";
 import Checkout from "./Duy/Checkout";
+import Thanks from "./Ngọc/Thanks";
 
 function App() {
   return (
@@ -56,9 +57,10 @@ function App() {
                   <ContactUs/>
                   <Footer/>
               </Route>
-              <Route exact path="/news">
+              <Route exact path="/thanks">
                   <ScrollToTop/>
                   <Nav/>
+                  <Thanks/>
                   <Footer/>
               </Route>
               <Route exact path="/checkout">
