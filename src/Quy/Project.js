@@ -19,7 +19,7 @@ export default function Project() {
                     </div>
                     <div className="col-md-6">
                         <div className="side1">
-                            <div className="row">
+                            <div className="row mar">
                                 <a className="col-md-4" href="#">
                                     <div className="cc">
                                         <img className="animation1 "
@@ -27,8 +27,8 @@ export default function Project() {
                                     </div>
                                 </a>
                                 <p className="col-md-8"><b><a className="cc" href="#">SOFITEL LEGEND METROPOLE HA NOI PROJECT
-                                </a></b><br/><br/>Rated as one of the ceiling fan distribution companies
-                                    High-grade reputation, everyone's reliable partner!</p>
+                                </a></b><br/>Rated as one of the reputable High-end ceiling fan distribution
+                                    companies, reliable partner!</p>
                             </div>
                             <br/>
                             <div className="row">
@@ -39,7 +39,7 @@ export default function Project() {
                                     </div>
                                 </a>
                                 <p className="col-md-8"><b><a className="cc" href="#">PROJECT SYSTEM
-                                    VINPEARL</a></b><br/><br/>In order to assert its position in the fertilizer market
+                                    VINPEARL</a></b><br/>In order to assert its position in the fertilizer market
                                     distribution of quality ceiling fans in Vietnam.</p>
                             </div>
                             <br/>
@@ -51,7 +51,7 @@ export default function Project() {
                                     </div>
                                 </a>
                                 <p className="col-md-8"><b><a className="cc" href="#">RESORT DUYEN HA CAM
-                                    RANH</a></b><br/><br/>Get the trust of many investors and architects
+                                    RANH</a></b><br/>Get the trust of many investors and architects
                                     Resort and Villas projects ...</p>
                             </div>
                         </div>
