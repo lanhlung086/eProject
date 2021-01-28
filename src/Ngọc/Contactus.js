@@ -25,7 +25,7 @@ export default function ContactUs(){
                         <div className="col-md-6 nenbgr">
                             <div className="loginn">
                                 <h2 className="title-tt text-tt">SEND INFORMATION</h2>
-                                <span className="contact-tt block">
+                                <span className="contact-tt block" style={{padding: "0 15px"}}>
               Please fill in the message content in the form below and send it to us. We will reply to you after receiving it.
             </span>
                                 <form method="post" className="contact-block">
