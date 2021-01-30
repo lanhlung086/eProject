@@ -4,8 +4,7 @@ import "./css/Project.css";
 export default function Project() {
     return (
         <section className="section main">
-            <p>  </p>
-            <div className="container">
+            <div className="container pro">
                 <div className="row">
                     <div className="col-md-6">
                         <a className="cc" href="#">
@@ -26,9 +25,8 @@ export default function Project() {
                                              src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg"/>
                                     </div>
                                 </a>
-                                <p className="col-md-8"><b><a className="cc" href="#">SOFITEL LEGEND METROPOLE HA NOI PROJECT
-                                </a></b><br/>Rated as one of the reputable High-end ceiling fan distribution
-                                    companies, reliable partner!</p>
+                                <p className="col-md-8"><b><a className="cc" href="#">SOFITEL LEGEND HA NOI PROJECT
+                                </a></b><br/>Rated as one of the reputable High-end ceiling fan distribution companies!</p>
                             </div>
                             <br/>
                             <div className="row">
@@ -39,8 +37,8 @@ export default function Project() {
                                     </div>
                                 </a>
                                 <p className="col-md-8"><b><a className="cc" href="#">PROJECT SYSTEM
-                                    VINPEARL</a></b><br/>In order to assert its position in the fertilizer market
-                                    distribution of quality ceiling fans in Vietnam.</p>
+                                    VINPEARL</a></b><br/>In order to affirm its position in the fan distribution market
+                                    in Vietnam.</p>
                             </div>
                             <br/>
                             <div className="row">
