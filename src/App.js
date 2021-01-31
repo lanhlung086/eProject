@@ -12,6 +12,8 @@ import Detail from "./KaiBM/Detail";
 import SignUp from "./Duy/SignUp";
 import SignIn from "./Duy/SignIn";
 import Checkout from "./Duy/Checkout";
+import Thanks from "./Ngọc/Thanks";
+import ProjectM1 from "./Quy/ProjectM1";
 
 function App() {
   return (
@@ -56,9 +58,10 @@ function App() {
                   <ContactUs/>
                   <Footer/>
               </Route>
-              <Route exact path="/news">
+              <Route exact path="/thanks">
                   <ScrollToTop/>
                   <Nav/>
+                  <Thanks/>
                   <Footer/>
               </Route>
               <Route exact path="/checkout">
@@ -74,6 +77,12 @@ function App() {
               <Route exact path="/signup">
                   <ScrollToTop/>
                   <SignUp/>
+              </Route>
+              <Route exact path="/projectM1">
+                  <ScrollToTop/>
+                  <Nav/>
+                  <ProjectM1/>
+                  <Footer/>
               </Route>
           </Switch>
       </div>

@@ -34,3 +34,10 @@
     overflow: hidden;
     display: inline-block;
 }
+.mar{
+    margin-bottom: 2px;
+}
+.pro{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

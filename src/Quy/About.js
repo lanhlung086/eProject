@@ -8,7 +8,7 @@ export default function About() {
             <div className="group fan">
                 <div className="container">
                     <div className="introduce">
-                        <div><br/>
+                        <div>
                         </div>
                         <div className="on">
                             <br/><p className="range"><b><u><h1>About Fan Group:</h1></u></b><br/><br/><b>Fan Group</b> is a
@@ -69,7 +69,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <p> </p>
         </section>
 
     );
