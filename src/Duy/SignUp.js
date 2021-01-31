@@ -110,31 +110,33 @@ function SignUp() {
     })
     return (
         <>
-            <div className="signUp">
-                <div className="signUp__logo">
-                    Fan<img src="imgs/fan-logo.png" alt=""/>Fan
-                </div>
-                <div className="signUp__createAcc">
-                    <h3>Create account</h3>
-                    <form className="signUp__form" method="post" action="">
-                        <label htmlFor="userName">Your name</label>
-                        <input id="userName" type="text" required autoFocus/>
-                        <p><i className="fas fa-exclamation"></i></p>
-                        <label htmlFor="userEmail">Email</label>
-                        <input id="userEmail" type="email" required/>
-                        <p><i className="fas fa-exclamation"></i></p>
-                        <label htmlFor="userPassword">Password</label>
-                        <input id="userPassword" type="password" title="Passwords must be at least 8 characters and 1 special character" pattern="^(?=.*[`!@#$%^&*])(?=.*[a-zA-Z\d]).{8,}$" required/>
-                        <p><i className="fas fa-exclamation"></i></p>
-                        <label htmlFor="confirmPassword">Re-enter password</label>
-                        <input id="confirmPassword" type="password" required/>
-                        <p><i className="fas fa-exclamation"></i></p>
-                        <button className="signUp__createAccButton" type="submit">Create your FANoFAN account</button>
-                    </form>
-                    <p className="signUp__rules">By creating an account, you agree to FANoFAN's Conditions of Use and Privacy Notice.</p>
-                    <p className="signUp__toSignIn">Already have an account? <Link to="/signin">Sign-In</Link></p>
-                </div>
-            </div>
+           <div className="signUpWrapper">
+               <div className="signUp">
+                   <div className="signUp__logo">
+                       Fan<img src="imgs/fan-logo.png" alt=""/>Fan
+                   </div>
+                   <div className="signUp__createAcc">
+                       <h3>Create account</h3>
+                       <form className="signUp__form" method="post" action="">
+                           <label htmlFor="userName">Your name</label>
+                           <input id="userName" type="text" required autoFocus/>
+                           <p><i className="fas fa-exclamation"></i></p>
+                           <label htmlFor="userEmail">Email</label>
+                           <input id="userEmail" type="email" required/>
+                           <p><i className="fas fa-exclamation"></i></p>
+                           <label htmlFor="userPassword">Password</label>
+                           <input id="userPassword" type="password" title="Passwords must be at least 8 characters and 1 special character" pattern="^(?=.*[`!@#$%^&*])(?=.*[a-zA-Z\d]).{8,}$" required/>
+                           <p><i className="fas fa-exclamation"></i></p>
+                           <label htmlFor="confirmPassword">Re-enter password</label>
+                           <input id="confirmPassword" type="password" required/>
+                           <p><i className="fas fa-exclamation"></i></p>
+                           <button className="signUp__createAccButton" type="submit">Create your FANoFAN account</button>
+                       </form>
+                       <p className="signUp__rules">By creating an account, you agree to FANoFAN's Conditions of Use and Privacy Notice.</p>
+                       <p className="signUp__toSignIn">Already have an account? <Link to="/signin">Sign-In</Link></p>
+                   </div>
+               </div>
+           </div>
         </>
     )
 }

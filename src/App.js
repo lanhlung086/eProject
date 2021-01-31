@@ -26,11 +26,14 @@ function App() {
                   <Home/>
                   <Footer/>
               </Route>
-              <Route exact path="/products">
-                  <ScrollToTop/>
-                  <Nav/>
-                  <Product/>
-                  <Footer/>
+              <Route exact path="/products/:name" render={(props) =>
+                  <>
+                      <ScrollToTop/>
+                      <Nav/>
+                      <Product name={props.match.params.name}/>
+                      <Footer/>
+                  </>
+              }>
               </Route>
               <Route exact path="/productdetail/:id" render={(props) =>
                   <>

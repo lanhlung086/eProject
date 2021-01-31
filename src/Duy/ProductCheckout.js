@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {useEffect} from 'react';
+import {HashLink} from "react-router-hash-link";
 import {useStateValue} from "./StateProvider";
 
 function ProductCheckout({id, imageSmall, imageBig, title, rating, review, price, listPrice, itemCount}) {
@@ -16,12 +16,12 @@ function ProductCheckout({id, imageSmall, imageBig, title, rating, review, price
             <div className="checkout__product">
                 <img src={imageBig} alt=""/>
                 <div className="checkout__productInfo">
-                    <Link to="">{title}</Link>
+                    <Link to={`/productdetail/${id}`}>{title}</Link>
                     <div className="checkout__itemRating">
                         <div className="checkout__itemWhiteStar">
                             <div className="checkout__itemYellowStar" style={{width: `${(rating / 5) * 100}%`}}></div>
                         </div>
-                        <Link className="checkout__itemReview" to="">{(!review) ? "0 rating":`${review} ratings`}</Link>
+                        <HashLink className="checkout__itemReview" to={`/productdetail/${id}#reviewHook`}>{(!review) ? "0 rating":`${review} ratings`}</HashLink>
                     </div>
                     <p className="checkout__productPrice">${price}</p>
                     <p className="checkout__shipInfo">Usually ships within 3 to 4 weeks</p>

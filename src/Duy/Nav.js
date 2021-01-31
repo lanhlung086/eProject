@@ -12,6 +12,13 @@ function Nav() {
         let productLink = document.querySelector(".navMain__productLink");
         let dropdownMenu = document.querySelector(".navMain__dropdownMenu");
         let backToTop = document.querySelector(".nav__backToTop");
+        let logoLink = document.querySelector(".navSub__logo > a");
+
+        logoLink.addEventListener("click", () => {
+            navLinks.forEach((a) => {
+                a.classList.remove("link--active");
+            })
+        })
 
         navLinks.forEach((a) => {
             a.addEventListener("click", (e) => {
@@ -81,40 +88,39 @@ function Nav() {
                 <ul className="navMain__menu">
                     <li><Link to="/">Home</Link></li>
                     <li className="navMain__productLink">
-                        <Link to="/products">Product</Link>
+                        <Link to="/products/All Products">Product</Link>
                         <i className="fas fa-angle-down"></i>
                         <ul className="navMain__dropdownMenu">
                             <li>
-                                <Link to="">Ceiling Fan</Link>
+                                <Link to="/products/Ceiling Fan">Ceiling Fan</Link>
                                 <ul className="navMain__nestedDropdownMenu">
-                                    <li><Link to="">Minka Aire Fan</Link></li>
-                                    <li><Link to="">Craftmade Fan</Link></li>
-                                    <li><Link to="">Kichler Fan</Link></li>
-                                    <li><Link to="">Monte Carlo Fan</Link></li>
-                                    <li><Link to="">Casablanca Fan</Link></li>
-                                    <li><Link to="">Quorum Fan</Link></li>
+                                    <li><Link to="/products/MINKA-AIRE">Minka Aire Fan</Link></li>
+                                    <li><Link to="/products/Craftmade">Craftmade Fan</Link></li>
+                                    <li><Link to="/products/Kichler">Kichler Fan</Link></li>
+                                    <li><Link to="/products/Monte Carlo">Monte Carlo Fan</Link></li>
+                                    <li><Link to="/products/Casablanca">Casablanca Fan</Link></li>
+                                    <li><Link to="/products/Quorum">Quorum Fan</Link></li>
                                 </ul>
                             </li>
                             <li>
-                                <Link to="">Tower Fan</Link>
+                                <Link to="/products/Tower Fan">Tower Fan</Link>
                                 <ul className="navMain__nestedDropdownMenu">
-                                    <li><Link to="">Lasko Fan</Link></li>
-                                    <li><Link to="">Honeywell Fan</Link></li>
-                                    <li><Link to="">Vornado Fan</Link></li>
+                                    <li><Link to="/products/Lasko">Lasko Fan</Link></li>
+                                    <li><Link to="/products/Honeywell">Honeywell Fan</Link></li>
+                                    <li><Link to="/products/Vornado">Vornado Fan</Link></li>
                                 </ul>
                             </li>
                             <li>
-                                <Link to="">Misting Fan</Link>
+                                <Link to="/products/Misting Fan">Misting Fan</Link>
                             </li>
                             <li>
-                                <Link to="">Exhaust Fan</Link>
+                                <Link to="/products/Exhaust Fan">Exhaust Fan</Link>
                             </li>
                         </ul>
                     </li>
                     <li><Link to="/project">Project</Link></li>
                     <li><Link to="/aboutus">About us</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/news">News</Link></li>
                 </ul>
             </div>
         </nav>

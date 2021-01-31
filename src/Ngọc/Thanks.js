@@ -25,8 +25,8 @@ export default function Thanks(){
                                 <h1 className="loicamon">Leave us a review</h1>
                                 <h4>Write reviews:</h4>
                                 <form className="fromcoment">
-                                    <textarea rows={6} cols={65} name="description" defaultValue={""} />
-                                    <input type="submit" name="submit" defaultValue="Send" className="send" style={{width: 100, height: 35, marginLeft: 222}} />
+                                    <textarea rows={6} cols={65} name="description" defaultValue={""} required/>
+                                    <input type="submit" name="submit" value="Send" className="send" style={{width: 100, height: 35, marginLeft: 222}} />
                                 </form>
                             </div>
                         </div>

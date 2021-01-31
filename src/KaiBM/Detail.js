@@ -65,6 +65,8 @@ function Detail({id}) {
                 <div className="main-body">
                     <div className="main-body-content">
                         <ProductDetail
+                            id={product?.id}
+                            imageSmall={product?.imageSmall}
                             imageBig01={product?.imageBig01}
                             imageBig02={product?.imageBig02}
                             title={product?.title}
@@ -120,7 +122,7 @@ function Detail({id}) {
                     </div>
                 </div>
                 <div className="line"/>
-                <div className="product_review">
+                <div className="product_review" id="reviewHook">
                     <CustomerReview
                         customers={product.customers}
                         rating={product.rating()}

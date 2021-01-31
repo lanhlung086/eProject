@@ -1,6 +1,7 @@
 import React from 'react';
 import "./css/Product.css" ;
 import {useEffect,useState} from 'react';
+import {HashLink} from "react-router-hash-link";
 import {Link} from "react-router-dom";
 
 export default function ProductList({id, image, title, price, listPrice, rating, review}) {
@@ -22,8 +23,10 @@ export default function ProductList({id, image, title, price, listPrice, rating,
     return(
         <div className="itemlist">
             <div className="item1">
-                <img className="product-image" src={image} height="230"
-                     width="300"/>
+                <Link to={`/productdetail/${id}`}>
+                    <img className="product-image" src={image} height="230"
+                         width="300"/>
+                </Link>
                 <Link to={`/productdetail/${id}`} className="title3">
                     {title}
                 </Link>
@@ -37,7 +40,7 @@ export default function ProductList({id, image, title, price, listPrice, rating,
                             <div className="star-rate" style={{width: rating / 5 * 100 + "%"}}> </div>
                         </div>
                     </div>
-                    <a className="hmratting" href="#">{review} reviews</a>
+                    <HashLink className="hmratting" to={`/productdetail/${id}#reviewHook`}>{review} {(review === 0 || review === 1) ? "review" : "reviews"}</HashLink>
                 </div>
                 <Link to={`/productdetail/${id}`}  className="button_detail">
                     More Detail

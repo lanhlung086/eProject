@@ -35,7 +35,7 @@
     width: 70%;
 }
 .checkout__emptyProduct > img {
-    flex-basis: 50%;
+    width: 50%;
 }
 .checkout__emptyProduct > .checkout__emptyProductInfo {
     flex-basis: 50%;
@@ -97,6 +97,7 @@
     width: 180px;
     height: 180px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 .checkout__productInfo {
     position: relative;

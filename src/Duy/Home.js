@@ -279,7 +279,7 @@ function Home() {
                         <img src="imgs/header-fan01.jpg"></img>
                         <img src="imgs/header-fan04.jpg"></img>
                         <img src="imgs/header-fan02.jpg"></img>
-                        <img id="firstClone" src="imgs/header-fan05.jpg"></img>.
+                        <img id="firstClone" src="imgs/header-fan05.jpg"></img>
                     </div>
                     <input id="radio1" type="radio" name="images"/>
                     <input id="radio2" type="radio" name="images"/>
