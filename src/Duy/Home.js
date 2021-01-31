@@ -45,7 +45,7 @@ function Home() {
         })
 
         leftButton.addEventListener("click", () => {
-            if (counter == 0){
+            if (counter === 0){
                 return;
             }
             carouselSlide.style.transition = "transform 0.5s ease-in-out";
@@ -60,7 +60,7 @@ function Home() {
         })
 
         rightButton.addEventListener("click", () => {
-            if (counter == images.length - 1) {
+            if (counter === images.length - 1) {
                 return;
             }
             carouselSlide.style.transition = "transform 0.5s ease-in-out";
@@ -75,7 +75,7 @@ function Home() {
         })
 
         carouselSlide.addEventListener("webkitTransitionEnd", () => {
-            if (images[counter].id == "firstClone") {
+            if (images[counter].id === "firstClone") {
                 labels.forEach((a) => {
                     a.style.backgroundColor = "transparent";
                 })
@@ -84,7 +84,7 @@ function Home() {
                 counter = images.length - counter;
                 carouselSlide.style.transform = `translateX(${-width * counter}px)`;
             }
-            if (images[counter].id == "lastClone") {
+            if (images[counter].id === "lastClone") {
                 labels.forEach((a) => {
                     a.style.backgroundColor = "transparent";
                 })
@@ -96,7 +96,7 @@ function Home() {
         })
 
         setInterval(() => {
-            if (images[counter].id == "firstClone") {
+            if (images[counter].id === "firstClone") {
                 counter = images.length - counter;
                 carouselSlide.style.transition = "none";
                 carouselSlide.style.transform = `translateX(${-width * counter}px)`;

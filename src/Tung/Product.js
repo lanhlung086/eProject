@@ -8,6 +8,7 @@ import ProductList from "./ProductList";
 export default function Product() {
     const [products,setProducts] = useState([...store]);
     useEffect(()=>{
+        setProducts(store);
         var tung=document.getElementsByClassName("category");
         for(let i=0;i<tung.length;i++){
             tung[i].onclick=function (e) {
@@ -150,8 +151,8 @@ export default function Product() {
             </div>
             <div className="product-main">
                 <div className="productlist sidebar">
-                    {/*<h2 className="title1">Category</h2>*/}
                     <div className="menu-category">
+                        <h2 className="title1">Products By BRAND</h2>
                         <a className="category ceilingLink" href="#">Ceiling Fan</a>
                         <div className="submenu-category">
                             <a className="link-category minkaAireLink" href="#">MinkaAire Fan</a>
@@ -169,7 +170,7 @@ export default function Product() {
                         </div>
                         <a className="category mistingLink" href="#">Misting Fan</a>
                         <a className="category exhaustLink" href="#">Exhaust Fan</a>
-                        <h2 className="title1">Select Products By Price</h2>
+                        <h2 className="title1">Products By PRICE</h2>
 
                         <label className="booking under50" htmlFor="checker50">
                             <input id="checker50" type="checkbox"/> Under
@@ -187,7 +188,7 @@ export default function Product() {
                             <input id="checker200" type="checkbox"/> $200
                             & Above</label>
 
-                        <h2 className="title1">Select Products By Rating</h2>
+                        <h2 className="title1">Products By RATING</h2>
                         <div className="star-booking" id="star4">
                             <div className="star">
                                 <div className="star-box">
@@ -227,9 +228,8 @@ export default function Product() {
                     </div>
                 </div>
                 <div className="productlist detail">
-                    {/*<h2 className="title1">Productlist</h2>*/}
                     <div className="sort_by">
-                        <strong>Sort By </strong>
+                        <strong>...Sort By...</strong>
                         <select id="sortby">
                             <option value="featured" selected>Featured</option>
                             <option  id="highlow" value="?sort=price-high">Price

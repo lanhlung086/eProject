@@ -49,7 +49,7 @@ function ProductHome({id, imageSmall, imageBig, title, rating, review, price, li
             <Link to="" className="main__itemTitle" href="" title={title}>{title}</Link>
             <div className="main__itemRating">
                 <div className="main__itemWhiteStar">
-                    <div className="main__itemYellowStar" style={{width: `${(rating / 5) * 100}%`}}></div>
+                    <div className="main__itemYellowStar" style={{width: `${(rating / 5) * 100}%`}}> </div>
                 </div>
                 <Link className="main__itemReview" to="">{review}</Link>
             </div>
