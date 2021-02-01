@@ -14,7 +14,7 @@ export default function ContactUs(){
     return(
         <>
             <section className="contact-us page-contact">
-                <div> <img src="./imgs/contactus-banner.jpg" height="100%" width="100%" /></div>
+                <div> <img className="contact-img" src="./imgs/contactus-banner.jpg" height="100%" width="100%" /></div>
                 <div className="container">
                     <div className="row" style={{padding: "15px 0", display:"flex"}}>
                         <div className="col-md-6">

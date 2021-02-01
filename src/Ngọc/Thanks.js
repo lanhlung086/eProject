@@ -12,7 +12,7 @@ export default function Thanks(){
                     <div className="row">
                         <div className={123}>
                             <div className="col-md-6">
-                                <h1 className="loicamon">Thanks for your purchase</h1>
+                                <h1 className="loicamon">Thanks for your feedback</h1>
                                 <br />
                                 <span className="chube">
               Thank you for visiting us and making your first purchase.
