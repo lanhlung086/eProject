@@ -16,6 +16,8 @@ body{
     font-weight: bolder;
     text-align: center ;
     color: black;
+
+
 }
 .title1{
     font-size: 18px;
@@ -26,7 +28,7 @@ body{
 .product-main{
     width: auto;
     display: flex;
-    background-color: #ccdbf5;
+    /*background-color: #fcfcfc;*/
 }
 .sidebar{
     /*position: sticky;*/
@@ -216,27 +218,32 @@ body{
     flex-direction: column;
     background-color: #ffffff;
     padding: 10px;
-    margin-top: 43px;
+    margin-top: 45px;
     border-radius: 5px ;
 
 }
 .category{
-    transition: background-color 300ms; border-bottom: 1px solid #8e95a7;
-    color: #242323;
+    background-color: #303841;
+    border-radius: 5px ;
+    color: #ffffff;
     text-decoration: none !important;
     padding: 10px;
     margin-bottom: 5px;
     font-size: 18px;
+
 }
 
 .category:focus,.category:hover{
-    color: #202943;
+    color: #ffffff;
+}
+.category.category--active{
+    color: #ffc003;
 }
 .category:visited{
-    background-color: #2e6da4;
+    background-color: #303841;
 }
 .category:active{
-    background-color: #2e6da4;
+    background-color: #303841;
 }
 .submenu-category{
     display: none;
@@ -245,6 +252,7 @@ body{
     margin-bottom: 5px;
     text-decoration: none;
     background-color: #eae7e7;
+    border-radius: 5px ;
 }
 .tungmenu--modifier + .submenu-category{
     display: block;
@@ -262,20 +270,22 @@ body{
     text-decoration: none !important;
     padding: 10px;
     margin-bottom: 5px;
-    margin-left: 10px;
     transition: all 0.5s ease-out;
 }
 .link-category:hover{
-    background-color: #333333;
+    background-color: #3a4750;
+    border-radius: 5px ;
+    color: #FFFFFF;
+}
+.link-category.link-category--active{
+    background-color: #3a4750;
     color: #FFFFFF;
 }
 .link-category:visited {
     text-decoration: none;
 }
 .link-category:active {
-    text-decoration: none;
-    background-color: #333333;
-    color: #FFFFFF;
+
 }
 /*-- checkboc --*/
 .booking{
@@ -289,6 +299,9 @@ body{
 }
 .star{
     cursor: pointer;
+}
+.star-booking:hover {
+    color: #ffc003;
 }
 #sortby{
     margin-right: 15px;

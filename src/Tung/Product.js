@@ -52,14 +52,14 @@ export default function Product({name}) {
                 setProducts(brandList);
             }
         }
-        var tung=document.getElementsByClassName("category");
-        for(let i=0;i<tung.length;i++){
-            tung[i].onclick=function (e) {
-                e.preventDefault();
-                let d = i ;
-                tung[d].classList.toggle('tungmenu--modifier')
-            }
-        }
+        // var tung=document.getElementsByClassName("category");
+        // for(let i=0;i<tung.length;i++){
+        //     tung[i].onclick=function (e) {
+        //         e.preventDefault();
+        //         let d = i ;
+        //         tung[d].classList.toggle('tungmenu--modifier')
+        //     }
+        // }
 
         const selectBrand = () => {
             let minkaAireLink = document.querySelector(".minkaAireLink");
@@ -180,6 +180,8 @@ export default function Product({name}) {
             })
             ceilingFanLink.addEventListener("click", (event) => {
                 event.preventDefault();
+                towerFanLink.classList.remove("tungmenu--modifier")
+                event.currentTarget.classList.toggle("tungmenu--modifier")
                 allInputs.forEach((e) => {
                     e.checked = false;
                 })
@@ -191,6 +193,8 @@ export default function Product({name}) {
             })
             towerFanLink.addEventListener("click", (event) => {
                 event.preventDefault();
+                ceilingFanLink.classList.remove("tungmenu--modifier")
+                event.currentTarget.classList.toggle("tungmenu--modifier")
                 allInputs.forEach((e) => {
                     e.checked = false;
                 })
@@ -202,6 +206,8 @@ export default function Product({name}) {
             })
             mistingFanLink.addEventListener("click", (event) => {
                 event.preventDefault();
+                towerFanLink.classList.remove("tungmenu--modifier")
+                ceilingFanLink.classList.remove("tungmenu--modifier")
                 allInputs.forEach((e) => {
                     e.checked = false;
                 })
@@ -213,6 +219,8 @@ export default function Product({name}) {
             })
             exhaustFanLink.addEventListener("click", (event) => {
                 event.preventDefault();
+                towerFanLink.classList.remove("tungmenu--modifier")
+                ceilingFanLink.classList.remove("tungmenu--modifier")
                 allInputs.forEach((e) => {
                     e.checked = false;
                 })
@@ -227,9 +235,13 @@ export default function Product({name}) {
 
         const sortByPriceAndStar = () => {
             let checker50 = document.querySelector("#checker50");
+            let fiftyTo100 = document.querySelector(".fiftyTo100");
             let checker50to100 = document.querySelector("#checker50to100");
+            let hundredTo150 = document.querySelector(".hundredTo150");
             let checker100to150 = document.querySelector("#checker100to150");
+            let fifteenHundredTo200 = document.querySelector(".fifteenHundredTo200");
             let checker150to200 = document.querySelector("#checker150to200");
+            let above200 = document.querySelector(".above200");
             let checker200 = document.querySelector("#checker200");
             let star1 = document.querySelector(".menu-category > .star-booking#star4 > .star");
             let star2 = document.querySelector(".menu-category > .star-booking#star3 > .star");
@@ -1098,7 +1110,39 @@ export default function Product({name}) {
             })
         }
         sortByPriceAndStar();
+
+        const activateButton =()=>{
+            let mainProductLinks = document.querySelectorAll(".category")
+            let subProductLinks = document.querySelectorAll(".link-category")
+
+            mainProductLinks.forEach((e)=>{
+                e.addEventListener("click",(event)=>{
+                    mainProductLinks.forEach((e)=>{
+                        e.classList.remove("category--active")
+                    })
+                    subProductLinks.forEach((e)=>{
+                        e.classList.remove("link-category--active")
+                    })
+                    event.currentTarget.classList.add("category--active")
+                })
+            })
+            subProductLinks.forEach((e)=>{
+                e.addEventListener("click",(event)=>{
+                    subProductLinks.forEach((e)=>{
+                        e.classList.remove("link-category--active")
+                    })
+                    mainProductLinks.forEach((e)=>{
+                        e.classList.remove("category--active")
+                    })
+                    event.currentTarget.classList.add("link-category--active")
+                })
+            })
+        }
+        activateButton();
     },[])
+    // useEffect(() => {
+    //     setProducts(products);
+    // },[products])
     return (
         <section className="section main">
             <div className="product-image-ad">
@@ -1106,7 +1150,6 @@ export default function Product({name}) {
             </div>
             <div className="product-main">
                 <div className="productlist sidebar">
-                    {/*<h2 className="title1">Category</h2>*/}
                     <div className="menu-category">
                         <a className="category ceilingLink" href="#">Ceiling Fan</a>
                         <div className="submenu-category">
@@ -1125,7 +1168,7 @@ export default function Product({name}) {
                         </div>
                         <a className="category mistingLink" href="#">Misting Fan</a>
                         <a className="category exhaustLink" href="#">Exhaust Fan</a>
-                        <h2 className="title1">Select Products By Price</h2>
+                        <h2 className="title1">PRICE</h2>
 
                         <div className="checkboxContainer">
                             <input id="checker50" type="checkbox"/>
@@ -1148,7 +1191,7 @@ export default function Product({name}) {
                             <label className="booking above200" htmlFor="checker200">$200 & Above</label>
                         </div>
 
-                        <h2 className="title1">Select Products By Rating</h2>
+                        <h2 className="title1">RATING</h2>
                         <p className="starClear">Clear</p>
                         <div className="star-booking" id="star4">
                             <div className="star">
