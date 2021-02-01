@@ -291,11 +291,14 @@ body{
     cursor: pointer;
 }
 #sortby{
-    margin-right: 18px;
+    margin-right: 15px;
+    margin-left: 5px;
+    padding: 2px;
 }
 .sort_by{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .checkboxContainer {
     margin-top: 10px;

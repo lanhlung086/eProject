@@ -278,7 +278,14 @@ export default function Product({name}) {
                 },
             ]
 
-
+            sortByPrice.addEventListener("change", (event) => {
+                if(event.currentTarget.value === "lowToHigh") {
+                    productValue.sort((a,b) => a.price - b.price);
+                    setProducts((prevState) => {
+                        console.log(productValue)
+                    })
+                }
+            })
 
             starClear.addEventListener("click", () => {
                 const checkBox = [...inputsNot1].some((e) => e.checked);
@@ -1184,13 +1191,10 @@ export default function Product({name}) {
                 <div className="productlist detail">
                     <div className="sort_by">
                         <strong>...Sort By...</strong>
-                        <select id="sortby">
+                        <select name="sortByPrice" id="sortby">
                             <option value="featured" selected>Featured</option>
-                            <option  id="highlow" value="?sort=price-high">Price
-                                (high to low)
-                            </option>
-                            <option  value="?sort=price-low">Price (low to high)
-                            </option>
+                            <option value="highToLow">Price (high to low)</option>
+                            <option value="lowToHigh">Price (low to high)</option>
                         </select>
                     </div>
                     <div className="colum-list">
