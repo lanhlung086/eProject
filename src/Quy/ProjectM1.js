@@ -7,66 +7,67 @@ export default function ProjectM1(){
                 <div className="row cd">
                     <div className="col-md-8">
                         <div className="on">
-                            <h1> Dự án SOL By Melia Phú Quốc </h1>
-                            <p>27/02/2020     10:42 sáng</p><br />
+                            <h1> SOL By Melia Phu Quoc project </h1>
+                            <p>27/02/2020     10:42 am</p><br />
                             <p>
-                                Sol Beach House Phú Quốc toạ lạc tại bãi Trường, nơi được đánh giá là một trong<br />
-                                những địa điểm đẹp nhất với những hàng dừa cao vút, bờ cát trắng, màu xanh ngọc bích<br />
-                                của biển và màu xanh lam thăm thẳm của mây trời.<br /><br />
-                                Dưới sự quản lý của tập đoàn quốc tế Melia, 284 phòng tại khu nghỉ dưỡng đều được<br />
-                                trang bị đầy đủ tiện nghi theo tiêu chuẩn quốc tế, cùng tầm nhìn hướng biển
+                                Sol Beach House Phu Quoc is located in Truong beach, which is rated as one the most
+                                beautiful places with soaring coconut trees, white sand, emerald green of the sea and the
+                                deep blue of the sky clouds.<br/><br/>
+
+                                Under the management of Melia International Group, 284 rooms at the resort are eligible
+                                fully equipped with international standard amenities, with sea view
                             </p>
                             <div><img className="cs" src="https://quattranmy.com/wp-content/uploads/2020/02/du-an-sol-by-melia-phu-quoc-3.jpg" /></div><br />
-                            <p>Ánh nắng ngập tràn, khu vườn nhiệt đới xanh mướt, bờ cát trắng mịn, làn nước trong<br />
-                                như ngọc và còn nguyên nét hoang sơ, Sol Beach House Phú Quốc xinh đẹp và ngọt <br />
-                                ngào trong từng góc chụp<br /><br />
-                                Lấy cảm hứng từ những cánh rừng nhiệt đới Sol Beach House Phú Quốc lựa chọn quạt<br />
-                                trần The Windpointe Với  thiết kế đơn giản, cánh quạt được làm bằng gỗ tự nhiên, thân<br />
-                                thiện với môi trường mang lại nét cá tính mà vẫn hòa hợp với tổng thể kiến trúc hiện đại<br />
-                                của khu nghỉ dưỡng.</p>
+                            <p>Sunshine, green tropical garden, smooth white sand, clear water
+                                Like jade and still unspoiled, Sol Beach House Phu Quoc is beautiful and sweet
+                                Sweet in every angle<br /><br />
+                                Inspired by the tropical forests Sol Beach House Phu Quoc selected fan
+                                The Windpointe Ceiling With a simple design, the propeller is made of natural wood, the body
+                                Environmentally friendly brings personality while still in harmony with the overall modern architecture
+                                of the resort.</p>
                             <div><img className="cs" src="https://quattranmy.com/wp-content/uploads/2020/02/du-an-sol-by-melia-phu-quoc-1.png" /></div><br />
-                            <p>Sản phẩm quạt trần The Windpointe do LuxuryFan cung cấp là sản phẩm được rất nhiều<br />
-                                đối tác khách sạn, khu nghỉ dưỡng lựa chọn và sử dụng.<br /><br />
-                                Các bạn cùng ngắm nhìn những hình ảnh được LuxuryFan chụp lại tại Sol Beach House Phú Quốc</p>
+                            <p>The Windpointe ceiling fan product provided by LuxuryFan is a huge product
+                                hotel and resort partners selected and used.<br /><br />
+                                Let's take a look at the pictures LuxuryFan took at Sol Beach House Phu Quoc:</p>
                             <div><img className="cs" src="https://quattranmy.com/wp-content/uploads/2020/02/du-an-sol-by-melia-phu-quoc-2.jpg" /></div><br />
                             <div><img className="cs" src="https://quattranmy.com/wp-content/uploads/2020/02/du-an-sol-by-melia-phu-quoc-4.jpg" /></div><br />
                             <div><img className="cs" src="https://quattranmy.com/wp-content/uploads/2020/02/du-an-sol-by-melia-phu-quoc-2.png" /></div><br />
-                            <p>Khách hàng yêu thích và quan tâm đến sản phẩm quạt trần của LUXURYFAN, hãy liên hệ<br />
-                                đến Hotline 0942 689368 để được tư vấn và hỗ trợ tốt nhất.</p>
+                            <p>Customers who love and are interested in FANGROUP's ceiling fans, please contact us
+                                come Hotline 0942 689368 for the best advice and support.</p>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div><img className="ca" src="https://quattranmy.com/wp-content/uploads/2019/11/quat-tran-thuong-hieu-hunter-luxuryfan.png" /></div><br /><br />
-                        <p /><h2>Tin tức liên quan</h2><p /><br /><br />
+                        <p /><h2>related news</h2><p /><br /><br />
                         <div className="row ">
                             <a className="col-md-5">
                                 <img className="cf" src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg" />
                             </a>
-                            <p className="col-md-7"><b>Làm thế nào để phòng ngủ thoáng !</b>
+                            <p className="col-md-7"><b>How to make the bedroom airy !</b>
                             </p></div><br />
                         <div className="row ">
                             <a className="col-md-5">
                                 <img className="cf" src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg" />
                             </a>
-                            <p className="col-md-7"><b>Làm thế nào để phòng ngủ thoáng !</b>
+                            <p className="col-md-7"><b>How to make the bedroom airy !</b>
                             </p></div><br />
                         <div className="row ">
                             <a className="col-md-5">
                                 <img className="cf" src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg" />
                             </a>
-                            <p className="col-md-7"><b>Làm thế nào để phòng ngủ thoáng !</b>
+                            <p className="col-md-7"><b>How to make the bedroom airy !</b>
                             </p></div><br />
                         <div className="row ">
                             <a className="col-md-5">
                                 <img className="cf" src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg" />
                             </a>
-                            <p className="col-md-7"><b>Làm thế nào để phòng ngủ thoáng !</b>
+                            <p className="col-md-7"><b>How to make the bedroom airy !</b>
                             </p></div><br />
                         <div className="row ">
                             <a className="col-md-5">
                                 <img className="cf" src="https://quattranmy.vn/wp-content/uploads/2021/01/metropole-ha-noi-2-408x270.jpg" />
                             </a>
-                            <p className="col-md-7"><b>Làm thế nào để phòng ngủ thoáng !</b>
+                            <p className="col-md-7"><b>How to make the bedroom airy !</b>
                             </p></div>
                     </div>
                 </div>
