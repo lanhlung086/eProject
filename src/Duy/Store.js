@@ -492,7 +492,10 @@ export const store = [
         sale: false,
         new: false,
         aboutItem: [
-
+            "Kichler fits any lighting needs",
+            "Variety of indoor lights, accessories and landscape lighting products",
+            "Made In China",
+            "Package Dimension : 22.86 centimeters L x 30.48 centimeters W x 57.15 centimeters H"
         ],
         customers: [
             {
@@ -570,7 +573,9 @@ export const store = [
                 name: "Dave",
                 rating: 5,
                 generalReview: "I had a problem twith Fan not running",
-                detailedReview: "I had a problem with the fan not working. I did not want to disassemble and take it down to ship for replacement 14 ft up in the air and 85\" fan. So I Call Kichler tech support told them what the problem was, they verified the problem over the phone, Sent out a new DC drive control board. In the process of installing new board found out the manufacture assembly had pinch the three wire to the DC motor, which cause the drive board not to work. Installed new board every thing is works fine."
+                detailedReview: [
+                    "I had a problem with the fan not working. I did not want to disassemble and take it down to ship for replacement 14 ft up in the air and 85\" fan. So I Call Kichler tech support told them what the problem was, they verified the problem over the phone, Sent out a new DC drive control board. In the process of installing new board found out the manufacture assembly had pinch the three wire to the DC motor, which cause the drive board not to work. Installed new board every thing is works fine."
+                ]
             },
             {
                 name: "\tPeter R.",

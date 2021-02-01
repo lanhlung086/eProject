@@ -7,6 +7,11 @@
     display: table;
     content: " ";
 }
+.contact-us img{
+    mask-image: linear-gradient(to bottom,rgb(0,0,0),rgba(0,0,0,0));
+    object-fit: revert;
+    height: 350px;
+}
 .row:before{
     display: table;
     content: " ";
@@ -37,7 +42,7 @@
 
 }
 
-body {
+.contact-us{
     overflow-x: hidden;
     color: #363f4d;
 }
@@ -46,7 +51,7 @@ body {
     font-size: 26px;
     line-height: 28px;
     margin: 30px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2.4px;
 }
@@ -57,13 +62,13 @@ body {
     text-align: center;
 }
 
-h2 {
+.contact-us h2{
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
 }
 
@@ -199,7 +204,6 @@ label{
 }
 .nenbgr{
     background:white;
-    padding: 25px 0;
 }
 .boxcontent {
     resize: none;

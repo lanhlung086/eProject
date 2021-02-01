@@ -1,7 +1,48 @@
 import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import {useStateValue} from "../Duy/StateProvider";
 
-function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, listPrice, color, brand, dimension, material, controllerType, finishType, aboutItem}) {
+function ProductDetail({id, imageSmall, imageBig01, imageBig02, title, rating, reviews, price, listPrice, color, brand, dimension, material, controllerType, finishType, aboutItem}) {
+    const [{cart}, dispatch] = useStateValue();
+    const addToBasket = () => {
+        const isStoreItem = cart.some(item => item.id === id)
+        if(isStoreItem) {
+            let item = cart.find((e) => {
+                return e.id === id;
+            })
+            let itemCount = item.itemCount + 1;
+            dispatch({
+                type: 'ADD_TO_CART',
+                item: {
+                    id: id,
+                    imageSmall: imageSmall,
+                    imageBig: imageBig01,
+                    title: title,
+                    rating: rating,
+                    review: reviews,
+                    price: price,
+                    listPrice: listPrice,
+                    itemCount: itemCount,
+                }
+            })
+        }
+        else {
+            dispatch({
+                type: 'ADD_TO_CART',
+                item: {
+                    id: id,
+                    imageSmall: imageSmall,
+                    imageBig: imageBig01,
+                    title: title,
+                    rating: rating,
+                    review: reviews,
+                    price: price,
+                    listPrice: listPrice,
+                    itemCount: 1,
+                }
+            })
+        }
+    }
     useEffect(() => {
         var slideIndex;
         function showSlides() {
@@ -34,6 +75,20 @@ function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, l
         currentImg2.addEventListener("click", () => {
             currentSlide(1)
         })
+
+        const buttonActivate = () => {
+            const buttons = document.querySelectorAll(".main__itemAddToCart1");
+
+            buttons.forEach((a) => {
+                a.addEventListener("mousedown", (e) => {
+                    e.currentTarget.classList.add("button--active")
+                })
+                window.addEventListener("mouseup", () => {
+                    a.classList.remove("button--active")
+                })
+            })
+        }
+        buttonActivate();
     }, [])
     return (
         <>
@@ -63,7 +118,7 @@ function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, l
                             </div>
                         </div>
                     </div>
-                    <button className="main__itemAddToCart1">Add to Cart</button>
+                    <button onClick={addToBasket} className="main__itemAddToCart1">Add to Cart</button>
                     <p><Link to="#" style={{textDecoration: 'none'}}><strong></strong></Link></p>
                     <div className="line"/>
                     <table style={{maxWidth: '100%', lineHeight: 2.0}} id="table_information">
@@ -99,10 +154,13 @@ function ProductDetail({imageBig01, imageBig02, title, rating, reviews, price, l
                             </tr>
                             : null
                         }
-                        <tr>
-                            <th><strong>Material</strong></th>
-                            <td>{material}</td>
-                        </tr>
+                        {(material)
+                            ? <tr>
+                                <th><strong>Material</strong></th>
+                                <td>{material}</td>
+                            </tr>
+                            : null
+                        }
                         <tr>
                             <th><strong>Controller Type</strong></th>
                             <td>{controllerType}</td>

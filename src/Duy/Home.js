@@ -45,7 +45,7 @@ function Home() {
         })
 
         leftButton.addEventListener("click", () => {
-            if (counter == 0){
+            if (counter === 0){
                 return;
             }
             carouselSlide.style.transition = "transform 0.5s ease-in-out";
@@ -60,7 +60,7 @@ function Home() {
         })
 
         rightButton.addEventListener("click", () => {
-            if (counter == images.length - 1) {
+            if (counter === images.length - 1) {
                 return;
             }
             carouselSlide.style.transition = "transform 0.5s ease-in-out";
@@ -75,7 +75,7 @@ function Home() {
         })
 
         carouselSlide.addEventListener("webkitTransitionEnd", () => {
-            if (images[counter].id == "firstClone") {
+            if (images[counter].id === "firstClone") {
                 labels.forEach((a) => {
                     a.style.backgroundColor = "transparent";
                 })
@@ -84,7 +84,7 @@ function Home() {
                 counter = images.length - counter;
                 carouselSlide.style.transform = `translateX(${-width * counter}px)`;
             }
-            if (images[counter].id == "lastClone") {
+            if (images[counter].id === "lastClone") {
                 labels.forEach((a) => {
                     a.style.backgroundColor = "transparent";
                 })
@@ -96,7 +96,7 @@ function Home() {
         })
 
         setInterval(() => {
-            if (images[counter].id == "firstClone") {
+            if (images[counter].id === "firstClone") {
                 counter = images.length - counter;
                 carouselSlide.style.transition = "none";
                 carouselSlide.style.transform = `translateX(${-width * counter}px)`;
@@ -279,7 +279,7 @@ function Home() {
                         <img src="imgs/header-fan01.jpg"></img>
                         <img src="imgs/header-fan04.jpg"></img>
                         <img src="imgs/header-fan02.jpg"></img>
-                        <img id="firstClone" src="imgs/header-fan05.jpg"></img>.
+                        <img id="firstClone" src="imgs/header-fan05.jpg"></img>
                     </div>
                     <input id="radio1" type="radio" name="images"/>
                     <input id="radio2" type="radio" name="images"/>
@@ -461,8 +461,8 @@ function Home() {
                                         <i className="fas fa-quote-left"></i>
                                         <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
                                     </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                    <div className="main__reviewImageContainer" data-name="Trịnh Quang Hòa" data-job="Professor Y">
+                                        <img src="imgs/sep1.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="main__reviewBlock">
@@ -480,7 +480,7 @@ function Home() {
                                         <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
                                     </div>
                                     <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                        <img src="imgs/sep2.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="main__reviewBlock">

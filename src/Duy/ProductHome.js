@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {HashLink} from 'react-router-hash-link';
 import {useStateValue} from "./StateProvider";
 
 function ProductHome({id, imageSmall, imageBig, title, rating, review, price, listPrice}) {
@@ -46,12 +47,12 @@ function ProductHome({id, imageSmall, imageBig, title, rating, review, price, li
     return (
         <div className="main__item">
             <Link to={`/productdetail/${id}`}><img src={imageSmall} alt=""/></Link>
-            <Link to="" className="main__itemTitle" href="" title={title}>{title}</Link>
+            <Link to={`/productdetail/${id}`} className="main__itemTitle" href="" title={title}>{title}</Link>
             <div className="main__itemRating">
                 <div className="main__itemWhiteStar">
-                    <div className="main__itemYellowStar" style={{width: `${(rating / 5) * 100}%`}}></div>
+                    <div className="main__itemYellowStar" style={{width: `${(rating / 5) * 100}%`}}> </div>
                 </div>
-                <Link className="main__itemReview" to="">{review}</Link>
+                <HashLink className="main__itemReview" to={`/productdetail/${id}#reviewHook`}>{review}</HashLink>
             </div>
             <div className="main__itemPriceContainer">
                 <div className="main__itemPrice">${price}</div>
