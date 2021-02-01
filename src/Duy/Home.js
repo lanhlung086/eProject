@@ -461,8 +461,8 @@ function Home() {
                                         <i className="fas fa-quote-left"></i>
                                         <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
                                     </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                    <div className="main__reviewImageContainer" data-name="Trịnh Quang Hòa" data-job="Professor Y">
+                                        <img src="imgs/sep1.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="main__reviewBlock">
@@ -480,7 +480,7 @@ function Home() {
                                         <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
                                     </div>
                                     <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                        <img src="imgs/sep2.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="main__reviewBlock">

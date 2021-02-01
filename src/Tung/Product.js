@@ -1191,7 +1191,7 @@ export default function Product({name}) {
                             <label className="booking above200" htmlFor="checker200">$200 & Above</label>
                         </div>
 
-                        <h2 className="title1">RATING</h2>
+                        <h2 className="title1_1">RATING</h2>
                         <p className="starClear">Clear</p>
                         <div className="star-booking" id="star4">
                             <div className="star">

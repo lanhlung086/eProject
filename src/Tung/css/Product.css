@@ -9,7 +9,7 @@ body{
 .product-image-ad{
     background-image: url("../imgs/ad.jpg");
     background-size: cover;
-    mask-image: linear-gradient(to bottom,rgb(0,0,0),rgba(0,0,0,0));
+    /*mask-image: linear-gradient(to bottom,rgb(0,0,0),rgba(0,0,0,0));*/
     height: 200px;
 }
 .title{
@@ -20,15 +20,19 @@ body{
 
 }
 .title1{
-    font-size: 18px;
-    padding: 5px;
-    /*mask-image: linear-gradient(to top,rgb(0,0,0),rgba(0,0,0,0));*/
-    /*border-radius: 5px;*/
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
+.title1_1{
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
 .product-main{
     width: auto;
     display: flex;
-    /*background-color: #fcfcfc;*/
 }
 .sidebar{
     /*position: sticky;*/
