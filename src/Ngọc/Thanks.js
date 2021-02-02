@@ -11,8 +11,8 @@ export default function Thanks(){
                 <div className="container">
                     <div className="row">
                         <div className={123}>
-                            <div className="">
-                                <h1 className="loicamon">Thanks for your purchase</h1>
+                            <div className="col-md-6">
+                                <h1 className="loicamon">Thanks for your feedback</h1>
                                 <br />
                                 <div className="chube">Thank you for visiting us and your feedback.
                                 We're glad that you found what you were looking for.

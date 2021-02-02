@@ -459,27 +459,9 @@ function Home() {
                                 <div className="main__reviewBlock">
                                     <div className="main__reviewContent">
                                         <i className="fas fa-quote-left"></i>
-                                        <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
+                                        <p>Từ lúc tôi mua quạt ở đây, đêm nào tôi cũng cảm giác khoan khoái và man mát!</p>
                                     </div>
                                     <div className="main__reviewImageContainer" data-name="Trịnh Quang Hòa" data-job="Professor Y">
-                                        <img src="imgs/sep1.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="main__reviewBlock">
-                                    <div className="main__reviewContent">
-                                        <i className="fas fa-quote-left"></i>
-                                        <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
-                                    </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="main__reviewBlock">
-                                    <div className="main__reviewContent">
-                                        <i className="fas fa-quote-left"></i>
-                                        <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
-                                    </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
                                         <img src="imgs/sep2.jpg" alt=""/>
                                     </div>
                                 </div>
@@ -495,19 +477,37 @@ function Home() {
                                 <div className="main__reviewBlock">
                                     <div className="main__reviewContent">
                                         <i className="fas fa-quote-left"></i>
-                                        <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
+                                        <p>Khoan nói về vấn đề quạt trần, nhưng thực sự anh thấy âm thanh của chiếc quạt chạy rất êm, mọi thứ nó rất work với nhau. Các em đã làm được những điều mà trước đây anh chưa làm được, đây đúng là những điều mà anh hằng tìm kiếm khi mua quạt trần Ờ mây zing gút chóp em!</p>
                                     </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                    <div className="main__reviewImageContainer" data-name="Binz" data-job="Rapper">
+                                        <img src="imgs/binz.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="main__reviewBlock">
                                     <div className="main__reviewContent">
                                         <i className="fas fa-quote-left"></i>
-                                        <p>Tôi năm nay hơn 70 tuổi mà chưa mua một cái quạt trần nào nó chất lượng như thế này cả!</p>
+                                        <p>Even myself cant create such amazing Tower Fans like this. Love it!</p>
                                     </div>
-                                    <div className="main__reviewImageContainer" data-name="Nguyễn Hữu Đa" data-job="Security Guard">
-                                        <img src="imgs/NguyenHuuDa.png" alt=""/>
+                                    <div className="main__reviewImageContainer" data-name="Tony Stark" data-job="Scrap-iron Dealer">
+                                        <img src="imgs/TonyStark.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div className="main__reviewBlock">
+                                    <div className="main__reviewContent">
+                                        <i className="fas fa-quote-left"></i>
+                                        <p>In my universe theres no such great things like this. My kids really love it. I guess im gonna order more of it. Thank you very much!</p>
+                                    </div>
+                                    <div className="main__reviewImageContainer" data-name="Thanos" data-job="Actor">
+                                        <img src="imgs/Thanos.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div className="main__reviewBlock">
+                                    <div className="main__reviewContent">
+                                        <i className="fas fa-quote-left"></i>
+                                        <p>Having a small hand-held Misting Fan while driving makes me feel like driving when playing Mai Thúy</p>
+                                    </div>
+                                    <div className="main__reviewImageContainer" data-name="Dominic Toretto" data-job="Actor">
+                                        <img src="imgs/Toretto.jpg" alt=""/>
                                     </div>
                                 </div>
                             </div>

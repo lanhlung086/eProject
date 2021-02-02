@@ -210,9 +210,9 @@
 .main__itemRating > .main__itemWhiteStar {
     position: relative;
     height: 16px;
-    width: calc(20px * 5);
+    width: calc(16px * 5);
     background-image: url("../imgs/whiteStar.png");
-    background-size: 20px 16px;
+    background-size: 16px 16px;
     background-repeat: repeat-x;
 }
 .main__itemRating .main__itemYellowStar {
@@ -221,7 +221,7 @@
     left: 0;
     height: 100%;
     background-image: url("../imgs/yellowStar.png");
-    background-size: 20px 16px;
+    background-size: 16px 16px;
     background-repeat: repeat-x;
 }
 .main__itemRating > .main__itemReview {
@@ -392,7 +392,7 @@
     clip-path: polygon(100% 0, 100% 100%, 50% 73%, 0 100%, 0 0);
 }
 .main__reviewContent > i {
-    margin: 30px 0;
+    margin: 20px 0 15px;
     font-size: 50px;
     color: #b59467;
 }
@@ -407,7 +407,7 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    bottom: 25px;
     height: 115px;
     width: 115px;
     background-color: white;

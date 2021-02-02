@@ -25,8 +25,7 @@
 /*}*/
 .range{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 0px;
+    padding-left: 0;
 }
 .cc{
     color: black;
