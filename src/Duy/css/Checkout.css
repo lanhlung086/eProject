@@ -125,16 +125,16 @@
     margin-bottom: 3px;
 }
 .checkout__itemWhiteStar {
-    height: 16px;
-    width: calc(20px * 5);
+    height: 15px;
+    width: calc(15px * 5);
     background-image: url("../imgs/whiteStar.png");
-    background-size: 20px 16px;
+    background-size: 15px 15px;
     background-repeat: repeat-x;
 }
 .checkout__itemYellowStar {
     height: 100%;
     background-image: url("../imgs/yellowStar.png");
-    background-size: 20px 16px;
+    background-size: 15px 15px;
     background-repeat: repeat-x;
 }
 .checkout__itemReview {
