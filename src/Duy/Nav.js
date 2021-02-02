@@ -120,7 +120,7 @@ function Nav() {
                     </li>
                     <li><Link to="/project">Project</Link></li>
                     <li><Link to="/aboutus">About us</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/contact">Contact us</Link></li>
                 </ul>
             </div>
         </nav>
