@@ -9,8 +9,7 @@
 }
 .contact-us img{
     mask-image: linear-gradient(to bottom,rgb(0,0,0),rgba(0,0,0,0));
-    object-fit: revert;
-    height: 350px;
+
 }
 .row:before{
     display: table;
@@ -42,7 +41,7 @@
 
 }
 
-.contact-us{
+body {
     overflow-x: hidden;
     color: #363f4d;
 }
