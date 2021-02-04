@@ -5,7 +5,7 @@ import Home from "./Duy/Home";
 import Product from "./Tung/Product";
 import Project from "./Quy/Project";
 import About from "./Quy/About";
-import ContactUs from "./Ngọc/Contactus"
+import ContactUs from "./Ngoc/Contactus"
 import Footer from "./Tung/Footer";
 import ScrollToTop from "./Duy/ScrollToTop";
 import Detail from "./KaiBM/Detail";
