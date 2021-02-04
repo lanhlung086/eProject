@@ -12,7 +12,7 @@ import Detail from "./KaiBM/Detail";
 import SignUp from "./Duy/SignUp";
 import SignIn from "./Duy/SignIn";
 import Checkout from "./Duy/Checkout";
-import Thanks from "./Ngọc/Thanks";
+import Thanks from "./Ngoc/Thanks";
 import ProjectM1 from "./Quy/ProjectM1";
 
 function App() {
